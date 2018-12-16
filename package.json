@@ -1,0 +1,63 @@
+{
+  "name": "earth",
+  "version": "1.0.0",
+  "scripts": {
+    "editorconfig": "editorconfig-cli",
+    "stylelint": "stylelint \"src/less/**/*.less\" --syntax less",
+    "test": "npm run editorconfig && npm run stylelint",
+    "start": "gulp dev",
+    "build": "set NODE_ENV=production && gulp build"
+  },
+  "devDependencies": {
+    "@htmlacademy/editorconfig-cli": "^1.0.0",
+    "autoprefixer": "^9.3.1",
+    "browser-sync": "^2.26.3",
+    "del": "^3.0.0",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-cached": "^1.1.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-csso": "^3.0.1",
+    "gulp-htmlhint": "^2.2.1",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-if": "^2.0.2",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-less": "^4.0.1",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-newer": "^1.4.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-posthtml": "^3.0.4",
+    "gulp-rename": "^1.4.0",
+    "gulp-replace": "^1.0.0",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-svgstore": "^7.0.0",
+    "gulp-ttf2woff": "^1.1.1",
+    "gulp-ttf2woff2": "^2.0.2",
+    "gulp-uglify": "^3.0.1",
+    "gulp-webp": "^3.0.0",
+    "imagemin-jpeg-recompress": "^5.1.0",
+    "imagemin-pngquant": "^6.0.0",
+    "posthtml-include": "^1.2.0",
+    "stream-combiner2": "^1.1.1",
+    "stylelint": "^9.7.1",
+    "stylelint-config-htmlacademy": "^0.1.1"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "IE 11",
+    "Firefox ESR"
+  ],
+  "editorconfig-cli": [
+    "*.json",
+    "*.js",
+    "src/**/*.html",
+    "src/js/**/*.js",
+    "src/img/**/*.svg",
+    "src/less/**/*.less"
+  ],
+  "dependencies": {
+    "npm": "^6.4.1"
+  }
+}
