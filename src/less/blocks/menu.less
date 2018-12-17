@@ -1,0 +1,85 @@
+.menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(-100%);
+  padding: 12px 10px 57px;
+  width: 100%;
+
+  background-color: #ffffff;
+  z-index: 9;
+  transition: transform 0.5s;
+
+  &--opened {
+    transform: translateX(0);
+  }
+}
+
+.menu__tel-wrapper {
+  margin: 0;
+}
+
+.menu__tel-number {
+  position: relative;
+  margin-right: 9px;
+  padding-left: 30px;
+
+  font-size: 14px;
+  line-height: 18px;
+  color: @dark-text;
+  font-weight: 700;
+
+  &::before {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    width: 9px;
+    height: 9px;
+
+    background: url("../img/icons/phone.png") no-repeat center;
+    content: "";
+  }
+}
+
+.menu__tel-button {
+  position: relative;
+  padding: 0;
+  padding-bottom: 3px;
+
+  color: #737480;
+  font-size: 11px;
+  line-height: 14px;
+
+  border: none;
+  background-color: transparent;
+
+  &::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+
+    background: @line-gradient;
+    content: "";
+  }
+}
+
+.menu__list {
+  .list-reset;
+  padding: 40px 30px 35px;
+}
+
+.menu__item {
+  &:not(:last-child) {
+    margin-bottom: 6px;
+  }
+}
+
+.menu__link {
+  font-size: 12px;
+  line-height: 30px;
+  color: #737480;
+  text-transform: uppercase;
+}

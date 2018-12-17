@@ -1,0 +1,54 @@
+.main-heading {
+  margin: 0;
+  margin-bottom: 5px;
+  padding: 0 40px;
+  width: 100%;
+}
+
+.main-heading__pre-heading {
+  position: relative;
+  display: block;
+  margin-bottom: 12px;
+
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 400;
+
+  &::before {
+    position: absolute;
+    top: 50%;
+    left: -30px;
+
+    width: 20px;
+    height: 1px;
+
+    background-color: @brand-color;
+    content: "";
+  }
+}
+
+.main-heading__text-heading {
+  position: relative;
+  display: block;
+
+  font-size: 30px;
+  line-height: 34px;
+  color: rgba(255, 255, 255, 1);
+  text-transform: uppercase;
+  letter-spacing: 4.2px;
+
+  &::before {
+    position: absolute;
+    top: 12px;
+    left: -24px;
+    transform: rotate(45deg);
+
+    width: 8px;
+    height: 8px;
+
+    border: 1px solid rgba(255, 255, 255, 0.4);
+
+    content: "";
+  }
+}
