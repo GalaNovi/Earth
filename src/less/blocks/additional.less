@@ -1,0 +1,132 @@
+.additional {
+
+}
+
+.additional__heading {
+  margin-bottom: 29px;
+}
+
+.additional__list {
+  .list-reset;
+  counter-reset: myCounter;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.additional__item {
+  .list-reset;
+  position: relative;
+  width: 100%;
+
+  font-size: 12px;
+  line-height: 18px;
+
+  &:nth-child(4n+1) {
+    color: #ffffff;
+    background-color: #36394d;
+  }
+
+  &:nth-child(4n+3) {
+    background-color: #f7f8fc;
+  }
+
+  &:nth-child(odd) {
+    padding: 36px 40px;
+    padding-right: 25px;
+    width: calc(100% - 30px);
+
+    .additional__item-text {
+      &::before {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: 4px;
+        height: 4px;
+
+        border-radius: 50%;
+        background-color: @brand-color;
+
+        content: "";
+      }
+    }
+
+    &::before {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+
+      width: 40px;
+      height: 40px;
+
+      background: linear-gradient(-45deg, #ffffff 27%, #737480 27%, #737480 calc(27% + 1.5px), #ffffff calc(27% + 1.5px), #ffffff 51%, transparent 51%);
+      content: "";
+    }
+
+    &::after {
+      right: -27px;
+      bottom: -18px;
+    }
+  }
+
+  &:nth-child(even) {
+    padding: 30px 30px 27px 79px;
+
+    &::after {
+      top: 45px;
+      left: -3px;
+    }
+
+    &::before {
+      top: 47px;
+      left: 11px;
+      background: linear-gradient(-45deg, transparent 27%, #737480 27%, #737480 calc(27% + 1.5px), transparent calc(27% + 1.5px), transparent 51%);
+    }
+  }
+
+  &::before {
+    position: absolute;
+
+    width: 40px;
+    height: 40px;
+
+    background: linear-gradient(-45deg, #ffffff 27%, #737480 27%, #737480 calc(27% + 1.5px), #ffffff calc(27% + 1.5px), #ffffff 51%, transparent 51%);
+    content: "";
+  }
+
+  &::after {
+    position: absolute;
+    counter-increment: myCounter;
+    content: counter(myCounter, decimal-leading-zero);
+    color: @brand-color;
+
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 700;
+    z-index: 10;
+  }
+
+  &:nth-child(3) {
+    &::after {
+      right: -32px;
+    }
+  }
+
+  &:nth-child(4) {
+    padding-top: 37px;
+
+    &::after {
+      top: 30px;
+    }
+
+    &::before {
+      top: 31px;
+      left: 12px;
+    }
+  }
+}
+
+.additional__item-text {
+  margin: 0;
+}

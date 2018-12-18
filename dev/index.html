@@ -155,78 +155,59 @@
             Земля находится возле <b>с. Убинское</b> на границе Новосибирской, Томской областей и Республики Казахстан.
           </p>
           <picture class="location__map">
-            <img src="http://placehold.it/825x465" alt="Карта месторасположения">
+            <img src="img/content/location/map-mobile.jpg" alt="Карта месторасположения">
           </picture>
           <p class="location__notify">
-            Всего 1 км отделяет этот участок от Федеральной Трассы Р-254 и 1.5 км от железнодорожной станции.
+            Всего <b>1 км</b> отделяет этот участок от Федеральной Трассы Р-254 и <b>1.5 км</b> от железнодорожной станции.
           </p>
         </div>
-        <button class="location__button button" type="button">Получить видеосъемку с воздуха</button>
+        <button class="location__button button" type="button">Получить видеосъемку с воздуха</button>
       </section>
 
       <section class="objects">
-        <h2 class="objects__heading heading">
-          <span></span>
+        <h2 class="objects__heading heading heading--right">
           <span class="heading__text">Объекты недвижимости</span>
-          <span class="heading__right-line"></span>
+          <span class="heading__side-element heading__side-element--right heading__right-line"></span>
         </h2>
         <div class="container">
           <p class="objects__text">
-            Земельный участок, помимо всего прочего, также имеет в собственности 3 довольно крупных объекта недвижимости
+            Земельный участок также имеет в собственности 3 довольно крупных объекта недвижимости
           </p>
           <ol class="objects__list">
             <li class="objects__item">
               <div class="objects__item-text-wrapper">
                 <h3 class="objects__item-heading">Двухэтажный админкорпус</h3>
-                <table class="objects__item-description">
-                  <tr>
-                    <td>Площадь:</td>
-                    <td>667 м<sup>2</sup></td>
-                  </tr>
-                  <tr>
-                    <td>Материал:</td>
-                    <td>Кирпич</td>
-                  </tr>
-                </table>
+                <div class="objects__item-description">
+                  <p>Площадь: 667 м<sup>2</sup></p>
+                  <p>Материал: Кирпич</p>
+                </div>
               </div>
               <picture class="objects__item-image">
-                <img src="http://placehold.it/270x250" alt="Двухэтажный админкорпус">
+                <img src="img/content/objects/admin.jpg" alt="Двухэтажный админкорпус">
               </picture>
             </li>
             <li class="objects__item">
               <div class="objects__item-text-wrapper">
                 <h3 class="objects__item-heading">Склад для хранения зерна</h3>
-                <table class="objects__item-description">
-                  <tr>
-                    <td>Площадь:</td>
-                    <td>545 м<sup>2</sup></td>
-                  </tr>
-                  <tr>
-                    <td>Материал:</td>
-                    <td>Металл</td>
-                  </tr>
-                </table>
+                <div class="objects__item-description">
+                  <p>Площадь: 545 м<sup>2</sup></p>
+                  <p>Материал: Металл</p>
+                </div>
               </div>
               <picture class="objects__item-image">
-                <img src="http://placehold.it/270x250" alt="Склад для хранения зерна">
+                <img src="img/content/objects/warehouse.jpg" alt="Склад для хранения зерна">
               </picture>
             </li>
             <li class="objects__item">
               <div class="objects__item-text-wrapper">
                 <h3 class="objects__item-heading">Телятник на двести голов</h3>
-                <table class="objects__item-description">
-                  <tr>
-                    <td>Площадь:</td>
-                    <td>1145 м<sup>2</sup></td>
-                  </tr>
-                  <tr>
-                    <td>Материал:</td>
-                    <td>Дерево</td>
-                  </tr>
-                </table>
+                <div class="objects__item-description">
+                  <p>Площадь: 1 145 м<sup>2</sup></p>
+                  <p>Материал: Дерево</p>
+                </div>
               </div>
               <picture class="objects__item-image">
-                <img src="http://placehold.it/270x250" alt="Телятник на двести голов">
+                <img src="img/content/objects/calf-house.jpg" alt="Телятник на двести голов">
               </picture>
             </li>
           </ol>
@@ -235,61 +216,75 @@
 
       <section class="use">
         <h2 class="use__heading heading">
-          <span class="heading__left-line"></span>
-          <span class="heading__text">Возможные</span>
-          <span></span>
-          <span class="heading__text--second-line">сферы применения</span>
+          <span class="heading__side-element heading__side-element--left heading__left-line"></span>
+          <span class="heading__text">Возможные сферы <!--применения--></span>
+          <span class="heading__side-element heading__side-element--right"></span>
         </h2>
         <div class="container">
           <div class="use__buttons-wrapper">
-            <button class="use__button" type="button">Животноводство</button>
-            <button class="use__button" type="button">Растениеводство</button>
+            <button class="use__button button use__button--active" type="button">Животноводство</button>
+            <button class="use__button button" type="button">Растениеводство</button>
           </div>
-          <ul class="use__list use__list--animals">
+          <ul class="use__list use__list--active use__list--animals">
             <li class="use__item">
               <h3 class="use__item-heading">Разведение КРС</h3>
+              <div class="use__item-icon-wrapper use__item-icon-wrapper--cow"></div>
             </li>
             <li class="use__item">
               <h3 class="use__item-heading">Звероводство</h3>
+              <div class="use__item-icon-wrapper use__item-icon-wrapper--fox"></div>
             </li>
             <li class="use__item">
               <h3 class="use__item-heading">Своноводство</h3>
+              <div class="use__item-icon-wrapper use__item-icon-wrapper--pig"></div>
             </li>
             <li class="use__item">
               <h3 class="use__item-heading">Кролиководство</h3>
+              <div class="use__item-icon-wrapper use__item-icon-wrapper--rabbit"></div>
             </li>
             <li class="use__item">
               <h3 class="use__item-heading">Овцеводство</h3>
+              <div class="use__item-icon-wrapper use__item-icon-wrapper--sheep"></div>
             </li>
             <li class="use__item">
               <h3 class="use__item-heading">Коневодство</h3>
+              <div class="use__item-icon-wrapper use__item-icon-wrapper--horse"></div>
             </li>
             <li class="use__item">
               <h3 class="use__item-heading">Птицеводство</h3>
+              <div class="use__item-icon-wrapper use__item-icon-wrapper--duck"></div>
             </li>
           </ul>
           <ul class="use__list use__list--plants">
             <li class="use__item">
               <h3 class="use__item-heading">Зерновые культуры</h3>
+              <div class="use__item-icon-wrapper use__item-icon-wrapper--grain"></div>
             </li>
             <li class="use__item">
               <h3 class="use__item-heading">Технические культуры</h3>
+              <div class="use__item-icon-wrapper use__item-icon-wrapper--root"></div>
             </li>
             <li class="use__item">
               <h3 class="use__item-heading">Корнеплоды</h3>
+              <div class="use__item-icon-wrapper use__item-icon-wrapper--tech"></div>
             </li>
             <li class="use__item">
               <h3 class="use__item-heading">Клубнеплоды</h3>
+              <div class="use__item-icon-wrapper use__item-icon-wrapper--tuber"></div>
             </li>
             <li class="use__item">
               <h3 class="use__item-heading">Кормовые культуры</h3>
+              <div class="use__item-icon-wrapper use__item-icon-wrapper--food"></div>
             </li>
             <li class="use__item">
               <h3 class="use__item-heading">Силосные культуры</h3>
+              <div class="use__item-icon-wrapper use__item-icon-wrapper--silo"></div>
             </li>
           </ul>
-          <button class="use__button button" type="button">Скачать бизнес-план</button>
-        </div>
+          <div class="use__download-button-wrapper">
+            <button class="use__download-button button" type="button">Скачать бизнес-план</button>
+          </div>
+          </div>
       </section>
 
       <section class="conditions">
@@ -299,9 +294,9 @@
         </h2>
         <div class="container">
           <p class="conditions__text">
-            У нас есть отличное предложение для тех, кто хочет совершить покупку безналичным расчетом до <b class="conditions__text-area">31 декабря</b> этого года
+            Для тех, кто хочет совершить покупку безналичным расчетом до <b class="conditions__text-area">31 декабря</b> этого года
           </p>
-          <button class="main-order__button button button--red">Принять участие</button>
+          <button class="conditions__button button button--red">Принять участие</button>
         </div>
         <div class="conditions__notify notify">
           Поспешите, чтобы успеть забронировать за собой персональную скидку
@@ -310,17 +305,18 @@
 
       <section class="additional">
         <h2 class="additional__heading heading">
-          <span class="heading__left-line"></span>
-          <span class="heading__text">Дополнительные</span>
-          <span></span>
-          <span class="heading__text--second-line">возможности</span>
+          <span class="heading__side-element heading__side-element--left heading__left-line"></span>
+          <span class="heading__text">Дополнительные возможности</span>
+          <span class="heading__side-element heading__side-element--right"></span>
         </h2>
         <div class="container">
           <ol class="additional__list">
             <li class="additional__item">
-              <p class="additional__item-text">
-                Изменение назначения разрешенного использования  участка на ведение “садоводства” и “животноводства”, что позволит строить производственные объекты
-              </p>
+              <div class="additional__item-text-wrapper">
+                <p class="additional__item-text">
+                  Изменение назначения разрешенного использования  участка на ведение “садоводства” и “животноводства”, что позволит строить производственные объекты
+                </p>
+              </div>
             </li>
             <li class="additional__item">
               <p class="additional__item-text">
@@ -329,7 +325,7 @@
             </li>
             <li class="additional__item">
               <p class="additional__item-text">
-                Получение арендной платы за использование земельных участков собственниками линейных объектов, в т.ч. ЛЭП и Нефтепроводы
+                Изменение назначения разрешенного использования  участка на ведение “садоводства” и “животноводства”, что позволит строить производственные объекты
               </p>
             </li>
             <li class="additional__item">

@@ -1,0 +1,230 @@
+.use {
+  padding-top: 65px;
+  padding-bottom: 74px;
+}
+
+.use__heading {
+  margin-bottom: 33px;
+}
+
+.use__buttons-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.use__button {
+  position: relative;
+  padding: 7px 15px;
+
+  font-size: 12px;
+  line-height: 26px;
+  text-transform: none;
+  color: rgba(115, 116, 128, 0.7);
+  font-weight: 400;
+
+  background-color: transparent;
+  box-shadow: none;
+  outline-color: #dadce5;
+
+  &::before,
+  &::after {
+    display: none;
+  }
+
+  &--active {
+    background-color: #f0f1f7;
+    color: #36394d;
+  }
+
+  &:not(:last-child) {
+    margin-right: 18px;
+
+    &::after {
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: auto;
+      right: -11px;
+      width: 4px;
+      height: 4px;
+      transform: translateY(-50%);
+
+      border-radius: 50%;
+      background: none;
+      background-color: #9a9ca6;
+      content: "";
+    }
+  }
+}
+
+.use__list {
+  .list-reset;
+  display: none;
+  flex-wrap: wrap;
+  // justify-content: center;
+  margin: 0 -5px;
+  margin-bottom: 15px;
+
+  &--active {
+    display: flex;
+  }
+}
+
+.use__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 5px;
+  margin-bottom: 8px;
+}
+
+.use__item-heading {
+  margin: 0;
+
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 600;
+  color: #36394d;
+}
+
+.use__item-icon-wrapper {
+  position: relative;
+  order: -1;
+  margin-bottom: 3px;
+  width: 145px;
+  height: 82px;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    background-color: rgba(54, 57, 77, 0.8);
+    background-position: center;
+    background-repeat: no-repeat;
+    content: "";
+  }
+
+  &--cow {
+    background-image: url("../img/bg/use/1.jpg");
+
+    &::before {
+      background-image: url("../img/icons/use/cow.png");
+    }
+  }
+
+  &--fox {
+    background-image: url("../img/bg/use/2.jpg");
+
+    &::before {
+      background-image: url("../img/icons/use/fox.png");
+    }
+  }
+
+  &--pig {
+    background-image: url("../img/bg/use/3.jpg");
+
+    &::before {
+      background-image: url("../img/icons/use/pig.png");
+    }
+  }
+
+  &--rabbit {
+    background-image: url("../img/bg/use/4.jpg");
+
+    &::before {
+      background-image: url("../img/icons/use/rabbit.png");
+    }
+  }
+
+  &--sheep {
+    background-image: url("../img/bg/use/5.jpg");
+
+    &::before {
+      background-image: url("../img/icons/use/sheep.png");
+    }
+  }
+
+  &--horse {
+    background-image: url("../img/bg/use/6.jpg");
+
+    &::before {
+      background-image: url("../img/icons/use/horse.png");
+    }
+  }
+
+  &--duck {
+    background-image: url("../img/bg/use/7.jpg");
+
+    &::before {
+      background-image: url("../img/icons/use/duck.png");
+    }
+  }
+
+  &--grain {
+    background-image: url("../img/bg/use/8.jpg");
+
+    &::before {
+      background-image: url("../img/icons/use/grain.png");
+    }
+  }
+
+  &--root {
+    background-image: url("../img/bg/use/9.jpg");
+
+    &::before {
+      background-image: url("../img/icons/use/root.png");
+    }
+  }
+
+  &--tech {
+    background-image: url("../img/bg/use/10.jpg");
+
+    &::before {
+      background-image: url("../img/icons/use/tech.png");
+    }
+  }
+
+  &--tuber {
+    background-image: url("../img/bg/use/11.jpg");
+
+    &::before {
+      background-image: url("../img/icons/use/tuber.png");
+    }
+  }
+
+  &--food {
+    background-image: url("../img/bg/use/12.jpg");
+
+    &::before {
+      background-image: url("../img/icons/use/food.png");
+    }
+  }
+
+  &--silo {
+    background-image: url("../img/bg/use/13.jpg");
+
+    &::before {
+      background-image: url("../img/icons/use/silo.png");
+    }
+  }
+}
+
+.use__download-button-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.use__download-button {
+  padding: 20px 37px 18px;
+
+  box-shadow: none;
+  outline: 1px solid #e6e9e3;
+
+  &::before {
+    background-image: linear-gradient(to right, #7d84b2 4px, transparent 4px, transparent calc(100% - 4px), #7d84b2 calc(100% - 4px));
+  }
+}
