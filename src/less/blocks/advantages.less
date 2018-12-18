@@ -1,0 +1,135 @@
+.advantages {
+  padding-top: 66px;
+  padding-bottom: 74px;
+  background: #f7f8fc url("../img/bg/rhombus-bg.png") no-repeat center top;
+}
+
+.advantages__heading {
+  margin-bottom: 8px;
+}
+
+.advantages__description {
+  margin: 0;
+  margin-bottom: 31px;
+  padding: 0 10px;
+
+  font-size: 13px;
+  line-height: 18px;
+  color: #737480;
+  letter-spacing: -0.1px;
+}
+
+.advantages__list {
+  .list-reset;
+  margin: 0 auto;
+  margin-bottom: 55px;
+  max-width: 500px;
+}
+
+.advantages__item {
+  position: relative;
+  margin: 0 auto;
+  margin-left: 30px;
+  margin-right: 31px;
+  margin-bottom: 20px; ///////////////////////////////////////////////////////////
+  padding: 25px 5px 24px 102px;
+  transform: translateX(-10px);
+
+  border: 1px solid #dadce5;
+  border-right: none;
+  background-color: #f7f8fc;
+  background-repeat: no-repeat;
+  background-position: 19px center;
+
+  &--pin {
+    background-image: url("../img/icons/advantages/pin.png");
+  }
+
+  &--objects {
+    background-image: url("../img/icons/advantages/objects.png");
+  }
+
+  &--route {
+    background-image: url("../img/icons/advantages/route.png");
+  }
+
+  &--water {
+    background-image: url("../img/icons/advantages/water.png");
+  }
+
+  &--flower {
+    background-image: url("../img/icons/advantages/flower.png");
+  }
+
+  &--money {
+    background-image: url("../img/icons/advantages/money.png");
+  }
+
+  &::before {
+    position: absolute;
+    top: -1px;
+    right: -21px;
+    width: 21px;
+    height: calc(100% - 19px);
+
+    background-color: #f7f8fc;
+    border-top: 1px solid #dadce5;
+    border-right: 1px solid #dadce5;
+
+    content: "";
+  }
+
+  &::after {
+    position: absolute;
+    bottom: -1px;
+    right: -21px;
+    width: 21px;
+    height: 21px;
+
+    background: linear-gradient(to top left, @brand-color 25%, transparent 25%, transparent calc(50% - 0.5px), #dadce5 calc(50% - 0.5px), #dadce5 calc(50% + 0.5px), #f7f8fc calc(50% + 0.5px));
+
+    content: "";
+  }
+}
+
+.advantages__item-hover-element {
+  position: absolute;
+  top: 50%;
+  left: -1px;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 35%;
+
+  background-color: #36394d;
+}
+
+.advantages__item-text {
+  position: relative;
+  margin: 0;
+
+  font-size: 12px;
+  line-height: 18px;
+  color: #737480;
+
+  strong {
+    color: #36394d;
+  }
+
+  &::before {
+    position: absolute;
+    top: 7px;
+    left: -14px;
+    width: 4px;
+    height: 4px;
+
+    border-radius: 50%;
+    background-color: #d76268;
+
+    content: "";
+  }
+}
+
+.advantages__button {
+  padding: 12px 5px 10px;
+  width: 232px;
+}

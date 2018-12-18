@@ -281,10 +281,10 @@
               <div class="use__item-icon-wrapper use__item-icon-wrapper--silo"></div>
             </li>
           </ul>
-          <div class="use__download-button-wrapper">
+          <div class="button__wrapper">
             <button class="use__download-button button" type="button">Скачать бизнес-план</button>
           </div>
-          </div>
+        </div>
       </section>
 
       <section class="conditions">
@@ -339,67 +339,80 @@
 
       <section class="advantages">
         <h2 class="advantages__heading heading heading--right">
-          <span></span>
           <span class="heading__text">Преимущества предложения</span>
-          <span class="heading__right-line"></span>
+          <span class="heading__side-element heading__side-element--right heading__right-line"></span>
         </h2>
         <div class="container">
           <p class="advantages__description">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry
+            Вот почему Вам стоит обратить внимание именно на этот земельний участок
           </p>
           <ul class="advantages__list">
-            <li class="advantages__item">
+            <li class="advantages__item advantages__item--pin">
+              <span class="advantages__item-hover-element"></span>
               <p class="advantages__item-text">
-                <strong>Территориальная</strong> близость к границам Новосибирской, Томской областей и Р. Казахстан
+                <strong>Территориальная близость</strong> к границам Новосибирской, Томской областей и Р. Казахстан
               </p>
             </li>
-            <li class="advantages__item">
+            <!-- <li class="advantages__item advantages__item--objects">
+              <span class="advantages__item-hover-element"></span>
               <p class="advantages__item-text">
                 В собственности <strong>объекты недвижимости</strong>
               </p>
             </li>
-            <li class="advantages__item">
+            <li class="advantages__item advantages__item--route">
+              <span class="advantages__item-hover-element"></span>
               <p class="advantages__item-text">
                 Примыкание к <strong>Федеральной Трассе</strong> Р-254 и <strong>ЖД станции</strong> Транссибирской магистрали
               </p>
             </li>
-            <li class="advantages__item">
+            <li class="advantages__item advantages__item--water">
+              <span class="advantages__item-hover-element"></span>
               <p class="advantages__item-text">
                 <strong>Наличие водоема</strong> в границах нашего земельного участка
               </p>
             </li>
-            <li class="advantages__item">
+            <li class="advantages__item advantages__item--flower">
+              <span class="advantages__item-hover-element"></span>
               <p class="advantages__item-text">
                 <strong>Плодородность земли</strong>, в т.ч.  большое количество торфа
               </p>
             </li>
-            <li class="advantages__item">
+            <li class="advantages__item advantages__item--money">
+              <span class="advantages__item-hover-element"></span>
               <p class="advantages__item-text">
-                <strong>Максимально выгодная стоимость</strong> за гектар земли в сравнении с существующими предложениями рынка
+                <strong>Макс. выгодная стоимость</strong> за гектар земли в сравнении с существующими предложениями
               </p>
-            </li>
+            </li> -->
           </ul>
-          <button class="advantages__button button" type="button">Получить коммерческое предложение</button>
+          <div class="button__wrapper">
+            <button class="advantages__button button" type="button">Получить коммерческое предложение</button>
+          </div>
         </div>
       </section>
 
       <section class="contacts">
         <h2 class="contacts__heading heading heading--left">
-          <span class="heading__left-line"></span>
+          <span class="heading__side-element heading__side-element--left heading__left-line"></span>
           <span class="heading__text">Наши контакты</span>
-          <span></span>
+          <span class="heading__side-element heading__side-element--right"></span>
         </h2>
         <div class="container">
           <div class="contacts__content-wrapper">
             <picture class="contacts__map">
-              <img src="#" alt="Наше местоположение на карте">
+              <img src="img/content/contacts/map.jpg" alt="Наше местоположение на карте">
             </picture>
+            <ul class="contacts__socials socials">
+              <li class="socials__item"><a class="socials__link socials__link--instagram" href="#"><span class="visually-hidden">Интаграм</span></a></li>
+              <li class="socials__item"><a class="socials__link socials__link--facebook" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+              <li class="socials__item"><a class="socials__link socials__link--skype" href="#"><span class="visually-hidden">Скайп</span></a></li>
+              <li class="socials__item"><a class="socials__link socials__link--vkontakte" href="#"><span class="visually-hidden">Вконтакте</span></a></li>
+            </ul>
             <div class="contacts__text-wrapper">
-              <p class="contacts__tel">
+              <p class="contacts__item contacts__item--phone">
                 <span class="contacts__title">Номер телефона</span>
                 <b>8 950 971 00 00</b>
               </p>
-              <p class="contacts__email">
+              <p class="contacts__item contacts__item--email">
                 <span class="contacts__title">Ел. почта</span>
                 <b>89509710000@mail.ru</b>
               </p>
@@ -408,7 +421,9 @@
               </p>
             </div>
           </div>
-          <button class="contacts__button button" type="button">Свяжитесь со мной</button>
+          <div class="button__wrapper">
+            <button class="contacts__button button" type="button">Свяжитесь со мной</button>
+          </div>
         </div>
       </section>
 
@@ -439,6 +454,7 @@
         <button class="popup__button button" type="submit">Свяжитесь со мной</button>
       </form>
       <button class="popup__close" type="button"><span class="visually-hidden">Закрыть</span></button>
+      <div class="popup__header-element"></div>
     </div>
 
     <div class="popup popus--call">
@@ -458,6 +474,7 @@
         <button class="popup__button button" type="submit">Отправить</button>
       </form>
       <button class="popup__close" type="button"><span class="visually-hidden">Закрыть</span></button>
+      <div class="popup__header-element"></div>
     </div>
 
     <div class="popup popus--video">
@@ -477,6 +494,7 @@
         <button class="popup__button button" type="submit">Отправить</button>
       </form>
       <button class="popup__close" type="button"><span class="visually-hidden">Закрыть</span></button>
+      <div class="popup__header-element"></div>
     </div>
 
     <div class="popup popus--action">
@@ -500,6 +518,7 @@
         <button class="popup__button button" type="submit">Отправить</button>
       </form>
       <button class="popup__close" type="button"><span class="visually-hidden">Закрыть</span></button>
+      <div class="popup__header-element"></div>
     </div>
 
     <div class="popup popus--offer">
@@ -523,9 +542,10 @@
         <button class="popup__button button" type="submit">Отправить</button>
       </form>
       <button class="popup__close" type="button"><span class="visually-hidden">Закрыть</span></button>
+      <div class="popup__header-element"></div>
     </div>
 
-    <div class="popup popus--callback">
+    <div class="popup popup--active popus--callback">
       <h2 class="popup__heading">Обратная связь</h2>
       <p class="popup__description">
         Остались вопросы? Заполните эту форму и мы свяжемся с Вами
@@ -543,15 +563,19 @@
           <label class="visually-hidden" for="callback-tel">Номер телефона</label>
           <input class="popup__form-field" type="tel" id="callback-tel" name="tel" placeholder="Номер телефона">
         </p>
-        <p class="popup__form-item">
+        <p class="popup__form-item popup__form-item--message">
           <label class="visually-hidden" for="callback-message">Сообщение</label>
-          <textarea class="popup__form-field popup__form-field--message" id="callback-message" name="message">Сообщение <i>(необязательно)</i></textarea>
+          <textarea class="popup__form-field popup__form-field--message" id="callback-message" name="message" placeholder="Сообщение (необязательно)"></textarea>
         </p>
         <button class="popup__button button" type="submit">Отправить</button>
       </form>
       <button class="popup__close" type="button"><span class="visually-hidden">Закрыть</span></button>
+      <div class="popup__header-element"></div>
     </div>
 
+    <div class="overlay overlay--active"></div>
+
     <script src="js/all.js"></script>
+    <script src="js/librarys/jquery-3.3.1.min.js"></script>
   </body>
 </html>
