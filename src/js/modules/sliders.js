@@ -42,7 +42,6 @@ $('.gallery__list-text').slick({
   asNavFor: '.gallery__list'
 });
 
-
 // Слайдер в блоке "Сколько это в цифрах"
 $('.comparing__list').slick({
   accessibility: false,
@@ -51,4 +50,15 @@ $('.comparing__list').slick({
   dots: true,
   prevArrow: '<button class="comparing__list-arrow comparing__list-arrow--previous" type="button"><span class="visually-hidden">Предыдущий слайд</span></button>',
   nextArrow: '<button class="comparing__list-arrow comparing__list-arrow--next" type="button"><span class="visually-hidden">Следующий слайд</span></button>'
+});
+
+// Слайдер в блоке "Преимущества"
+$('.advantages__list').slick({
+  accessibility: false,
+  variableWidth: true,
+  centerMode: true,
+  adaptiveHeight: true,
+  dots: true,
+  prevArrow: '<button class="advantages__list-arrow advantages__list-arrow--previous" type="button"><span class="visually-hidden">Предыдущий слайд</span></button>',
+  nextArrow: '<button class="advantages__list-arrow advantages__list-arrow--next" type="button"><span class="visually-hidden">Следующий слайд</span></button>'
 });
