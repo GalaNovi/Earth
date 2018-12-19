@@ -438,140 +438,144 @@
 
     <!-- ==================== Popups ==================== -->
 
-    <div class="popup popus--cost">
-      <h2 class="popup__heading">Узнать стоимость</h2>
-      <p class="popup__description">
-        Заполните форму и наш менеджер свяжется с Вами в течение 5 минут
-      </p>
-      <form class="popup__form" action="#" method="POST">
-        <p class="popup__form-item popup__form-item--name">
-          <label class="visually-hidden" for="cost-name">Ваше имя</label>
-          <input class="popup__form-field" type="text" id="cost-name" name="name" placeholder="Ваше имя">
-        </p>
-        <p class="popup__form-item popup__form-item--tel">
-          <label class="visually-hidden" for="cost-tel">Номер телефона</label>
-          <input class="popup__form-field" type="tel" id="cost-tel" name="tel" placeholder="Номер телефона">
-        </p>
-        <button class="popup__button button" type="submit">Свяжитесь со мной</button>
-      </form>
-      <button class="popup__close" type="button"><span class="visually-hidden">Закрыть</span></button>
-      <div class="popup__header-element"></div>
-    </div>
+    <div class="overlay overlay--popup" id="overlay-popup">
 
-    <div class="popup popus--call">
-      <h2 class="popup__heading">Заказать звонок</h2>
-      <p class="popup__description">
-        Заполните форму и наш менеджер свяжется с Вами в течение 5 минут
-      </p>
-      <form class="popup__form" action="#" method="POST">
-        <p class="popup__form-item popup__form-item--name">
-          <label class="visually-hidden" for="call-name">Ваше имя</label>
-          <input class="popup__form-field" type="text" id="call-name" name="name" placeholder="Ваше имя">
+      <div class="popup popup--cost">
+        <h2 class="popup__heading">Узнать стоимость</h2>
+        <p class="popup__description">
+          Заполните форму и наш менеджер свяжется с Вами в течение 5 минут
         </p>
-        <p class="popup__form-item popup__form-item--email">
-          <label class="visually-hidden" for="call-email">Электронная почта</label>
-          <input class="popup__form-field" type="email" id="call-email" name="email" placeholder="Электронная почта">
-        </p>
-        <button class="popup__button button" type="submit">Отправить</button>
-      </form>
-      <button class="popup__close" type="button"><span class="visually-hidden">Закрыть</span></button>
-      <div class="popup__header-element"></div>
-    </div>
+        <form class="popup__form" action="#" method="POST">
+          <p class="popup__form-item popup__form-item--name">
+            <label class="visually-hidden" for="cost-name">Ваше имя</label>
+            <input class="popup__form-field" type="text" id="cost-name" name="name" placeholder="Ваше имя">
+          </p>
+          <p class="popup__form-item popup__form-item--tel">
+            <label class="visually-hidden" for="cost-tel">Номер телефона</label>
+            <input class="popup__form-field" type="tel" id="cost-tel" name="tel" placeholder="Номер телефона">
+          </p>
+          <button class="popup__button button" type="submit">Свяжитесь со мной</button>
+        </form>
+        <button class="popup__close" type="button"><span class="visually-hidden">Закрыть</span></button>
+        <div class="popup__header-element"></div>
+      </div>
 
-    <div class="popup popus--video">
-      <h2 class="popup__heading">Получить видеосъемку</h2>
-      <p class="popup__description">
-        Заполните форму и наш менеджер отправит Вам видео
-      </p>
-      <form class="popup__form" action="#" method="POST">
-        <p class="popup__form-item popup__form-item--name">
-          <label class="visually-hidden" for="video-name">Ваше имя</label>
-          <input class="popup__form-field" type="text" id="video-name" name="name" placeholder="Ваше имя">
+      <div class="popup popup--call">
+        <h2 class="popup__heading">Заказать звонок</h2>
+        <p class="popup__description">
+          Заполните форму и наш менеджер свяжется с Вами в течение 5 минут
         </p>
-        <p class="popup__form-item popup__form-item--email">
-          <label class="visually-hidden" for="video-email">Электронная почта</label>
-          <input class="popup__form-field" type="email" id="video-email" name="email" placeholder="Электронная почта">
-        </p>
-        <button class="popup__button button" type="submit">Отправить</button>
-      </form>
-      <button class="popup__close" type="button"><span class="visually-hidden">Закрыть</span></button>
-      <div class="popup__header-element"></div>
-    </div>
+        <form class="popup__form" action="#" method="POST">
+          <p class="popup__form-item popup__form-item--name">
+            <label class="visually-hidden" for="call-name">Ваше имя</label>
+            <input class="popup__form-field" type="text" id="call-name" name="name" placeholder="Ваше имя">
+          </p>
+          <p class="popup__form-item popup__form-item--email">
+            <label class="visually-hidden" for="call-email">Электронная почта</label>
+            <input class="popup__form-field" type="email" id="call-email" name="email" placeholder="Электронная почта">
+          </p>
+          <button class="popup__button button" type="submit">Отправить</button>
+        </form>
+        <button class="popup__close" type="button"><span class="visually-hidden">Закрыть</span></button>
+        <div class="popup__header-element"></div>
+      </div>
 
-    <div class="popup popus--action">
-      <h2 class="popup__heading">Участие в акции</h2>
-      <p class="popup__description">
-        Заполните форму и получите персональную скидку
-      </p>
-      <form class="popup__form" action="#" method="POST">
-        <p class="popup__form-item popup__form-item--name">
-          <label class="visually-hidden" for="action-name">Ваше имя</label>
-          <input class="popup__form-field" type="text" id="action-name" name="name" placeholder="Ваше имя">
+      <div class="popup popup--video">
+        <h2 class="popup__heading">Получить видеосъемку</h2>
+        <p class="popup__description">
+          Заполните форму и наш менеджер отправит Вам видео
         </p>
-        <p class="popup__form-item popup__form-item--email">
-          <label class="visually-hidden" for="action-email">Электронная почта</label>
-          <input class="popup__form-field" type="email" id="action-email" name="email" placeholder="Электронная почта">
-        </p>
-        <p class="popup__form-item popup__form-item--tel">
-          <label class="visually-hidden" for="action-tel">Номер телефона</label>
-          <input class="popup__form-field" type="tel" id="action-tel" name="tel" placeholder="Номер телефона">
-        </p>
-        <button class="popup__button button" type="submit">Отправить</button>
-      </form>
-      <button class="popup__close" type="button"><span class="visually-hidden">Закрыть</span></button>
-      <div class="popup__header-element"></div>
-    </div>
+        <form class="popup__form" action="#" method="POST">
+          <p class="popup__form-item popup__form-item--name">
+            <label class="visually-hidden" for="video-name">Ваше имя</label>
+            <input class="popup__form-field" type="text" id="video-name" name="name" placeholder="Ваше имя">
+          </p>
+          <p class="popup__form-item popup__form-item--email">
+            <label class="visually-hidden" for="video-email">Электронная почта</label>
+            <input class="popup__form-field" type="email" id="video-email" name="email" placeholder="Электронная почта">
+          </p>
+          <button class="popup__button button" type="submit">Отправить</button>
+        </form>
+        <button class="popup__close" type="button"><span class="visually-hidden">Закрыть</span></button>
+        <div class="popup__header-element"></div>
+      </div>
 
-    <div class="popup popus--offer">
-      <h2 class="popup__heading">Ваше коммерческое предложение</h2>
-      <p class="popup__description">
-        Заполните форму и получите Ваше предложение по почте
-      </p>
-      <form class="popup__form" action="#" method="POST">
-        <p class="popup__form-item popup__form-item--name">
-          <label class="visually-hidden" for="offer-name">Ваше имя</label>
-          <input class="popup__form-field" type="text" id="offer-name" name="name" placeholder="Ваше имя">
+      <div class="popup popup--action">
+        <h2 class="popup__heading">Участие в акции</h2>
+        <p class="popup__description">
+          Заполните форму и получите персональную скидку
         </p>
-        <p class="popup__form-item popup__form-item--email">
-          <label class="visually-hidden" for="offer-email">Электронная почта</label>
-          <input class="popup__form-field" type="email" id="offer-email" name="email" placeholder="Электронная почта">
-        </p>
-        <p class="popup__form-item popup__form-item--tel">
-          <label class="visually-hidden" for="offer-tel">Номер телефона</label>
-          <input class="popup__form-field" type="tel" id="offer-tel" name="tel" placeholder="Номер телефона">
-        </p>
-        <button class="popup__button button" type="submit">Отправить</button>
-      </form>
-      <button class="popup__close" type="button"><span class="visually-hidden">Закрыть</span></button>
-      <div class="popup__header-element"></div>
-    </div>
+        <form class="popup__form" action="#" method="POST">
+          <p class="popup__form-item popup__form-item--name">
+            <label class="visually-hidden" for="action-name">Ваше имя</label>
+            <input class="popup__form-field" type="text" id="action-name" name="name" placeholder="Ваше имя">
+          </p>
+          <p class="popup__form-item popup__form-item--email">
+            <label class="visually-hidden" for="action-email">Электронная почта</label>
+            <input class="popup__form-field" type="email" id="action-email" name="email" placeholder="Электронная почта">
+          </p>
+          <p class="popup__form-item popup__form-item--tel">
+            <label class="visually-hidden" for="action-tel">Номер телефона</label>
+            <input class="popup__form-field" type="tel" id="action-tel" name="tel" placeholder="Номер телефона">
+          </p>
+          <button class="popup__button button" type="submit">Отправить</button>
+        </form>
+        <button class="popup__close" type="button"><span class="visually-hidden">Закрыть</span></button>
+        <div class="popup__header-element"></div>
+      </div>
 
-    <div class="popup popus--callback">
-      <h2 class="popup__heading">Обратная связь</h2>
-      <p class="popup__description">
-        Остались вопросы? Заполните эту форму и мы свяжемся с Вами
-      </p>
-      <form class="popup__form" action="#" method="POST">
-        <p class="popup__form-item popup__form-item--name">
-          <label class="visually-hidden" for="callback-name">Ваше имя</label>
-          <input class="popup__form-field" type="text" id="callback-name" name="name" placeholder="Ваше имя">
+      <div class="popup popup--offer">
+        <h2 class="popup__heading">Ваше коммерческое предложение</h2>
+        <p class="popup__description">
+          Заполните форму и получите Ваше предложение по почте
         </p>
-        <p class="popup__form-item popup__form-item--email">
-          <label class="visually-hidden" for="callback-email">Электронная почта</label>
-          <input class="popup__form-field" type="email" id="callback-email" name="email" placeholder="Электронная почта">
+        <form class="popup__form" action="#" method="POST">
+          <p class="popup__form-item popup__form-item--name">
+            <label class="visually-hidden" for="offer-name">Ваше имя</label>
+            <input class="popup__form-field" type="text" id="offer-name" name="name" placeholder="Ваше имя">
+          </p>
+          <p class="popup__form-item popup__form-item--email">
+            <label class="visually-hidden" for="offer-email">Электронная почта</label>
+            <input class="popup__form-field" type="email" id="offer-email" name="email" placeholder="Электронная почта">
+          </p>
+          <p class="popup__form-item popup__form-item--tel">
+            <label class="visually-hidden" for="offer-tel">Номер телефона</label>
+            <input class="popup__form-field" type="tel" id="offer-tel" name="tel" placeholder="Номер телефона">
+          </p>
+          <button class="popup__button button" type="submit">Отправить</button>
+        </form>
+        <button class="popup__close" type="button"><span class="visually-hidden">Закрыть</span></button>
+        <div class="popup__header-element"></div>
+      </div>
+
+      <div class="popup popup--callback">
+        <h2 class="popup__heading">Обратная связь</h2>
+        <p class="popup__description">
+          Остались вопросы? Заполните эту форму и мы свяжемся с Вами
         </p>
-        <p class="popup__form-item popup__form-item--tel">
-          <label class="visually-hidden" for="callback-tel">Номер телефона</label>
-          <input class="popup__form-field" type="tel" id="callback-tel" name="tel" placeholder="Номер телефона">
-        </p>
-        <p class="popup__form-item popup__form-item--message">
-          <label class="visually-hidden" for="callback-message">Сообщение</label>
-          <textarea class="popup__form-field popup__form-field--message" id="callback-message" name="message" placeholder="Сообщение (необязательно)"></textarea>
-        </p>
-        <button class="popup__button button" type="submit">Отправить</button>
-      </form>
-      <button class="popup__close" type="button"><span class="visually-hidden">Закрыть</span></button>
-      <div class="popup__header-element"></div>
+        <form class="popup__form" action="#" method="POST">
+          <p class="popup__form-item popup__form-item--name">
+            <label class="visually-hidden" for="callback-name">Ваше имя</label>
+            <input class="popup__form-field" type="text" id="callback-name" name="name" placeholder="Ваше имя">
+          </p>
+          <p class="popup__form-item popup__form-item--email">
+            <label class="visually-hidden" for="callback-email">Электронная почта</label>
+            <input class="popup__form-field" type="email" id="callback-email" name="email" placeholder="Электронная почта">
+          </p>
+          <p class="popup__form-item popup__form-item--tel">
+            <label class="visually-hidden" for="callback-tel">Номер телефона</label>
+            <input class="popup__form-field" type="tel" id="callback-tel" name="tel" placeholder="Номер телефона">
+          </p>
+          <p class="popup__form-item popup__form-item--message">
+            <label class="visually-hidden" for="callback-message">Сообщение</label>
+            <textarea class="popup__form-field popup__form-field--message" id="callback-message" name="message" placeholder="Сообщение (необязательно)"></textarea>
+          </p>
+          <button class="popup__button button" type="submit">Отправить</button>
+        </form>
+        <button class="popup__close" type="button"><span class="visually-hidden">Закрыть</span></button>
+        <div class="popup__header-element"></div>
+      </div>
+
     </div>
 
     <div class="overlay" id="overlay"></div>

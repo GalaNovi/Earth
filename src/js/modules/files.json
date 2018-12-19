@@ -1,3 +1,4 @@
 [
-  "src/js/modules/menu.js"
+  "src/js/modules/menu.js",
+  "src/js/modules/popups.js"
 ]

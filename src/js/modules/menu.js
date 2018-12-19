@@ -1,18 +1,18 @@
 'use strict';
 
 (function () {
+    var BURGER_OPENED_CLASS = 'page-header__menu-button--opened'; // Класс у кнопки при открытом меню
+    var BURGER_CLOSED_CLASS = 'page-header__menu-button--closed'; // Класс у кнопки при закрытом меню
+    var MENU_OPENED_CLASS = 'menu--opened'; // Класс открытого меню
+    var MENU_CLOSED_CLASS = 'menu--closed'; // Класс закрытого меню
+    var OVERLAY_ACTIVE_CLASS = 'overlay--active'; // Класс активного затемняющего слоя
+
     var burgerElement = document.querySelector('.page-header__menu-button'); // Кнопка меню
     var menuElement = document.querySelector('.menu'); // Меню
     var overlayElement = document.querySelector('#overlay'); // Затемняющий слой
     var internalLinksElements = document.querySelectorAll('.menu__link'); // Внутренние ссылки
 
     var initMenu = function (burger, menu, overlay, internalLinks) {
-      var BURGER_OPENED_CLASS = 'page-header__menu-button--opened'; // Класс у кнопки при открытом меню
-      var BURGER_CLOSED_CLASS = 'page-header__menu-button--closed'; // Класс у кнопки при закрытом меню
-      var MENU_OPENED_CLASS = 'menu--opened'; // Класс открытого меню
-      var MENU_CLOSED_CLASS = 'menu--closed'; // Класс закрытого меню
-      var OVERLAY_ACTIVE_CLASS = 'overlay--active'; // Класс активного затемняющего слоя
-
       // Переключает кнопку меню
       var switchBurger = function () {
         burger.classList.toggle(BURGER_CLOSED_CLASS);
@@ -40,7 +40,8 @@
       };
 
       // Действия прри клике на кнопку меню
-      var closeOpenMenu = function () {
+      var closeOpenMenu = function (evt) {
+        evt.preventDefault();
         switchBurger();
         switchMenu();
         if (overlay) {
