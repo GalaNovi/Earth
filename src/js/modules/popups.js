@@ -49,8 +49,10 @@
       };
 
       // При клике на затемняющий слой, закрывает попап
-      var onOverlayClick = function () {
-        closePopup();
+      var onOverlayClick = function (evt) {
+        if (evt.target === overlay) {
+          closePopup();
+        }
       };
 
       // Открывает попап, навешивает обработчики

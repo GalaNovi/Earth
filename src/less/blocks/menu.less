@@ -58,6 +58,7 @@
   line-height: 14px;
 
   border: none;
+  outline: none;
   background-color: transparent;
 
   &::after {
@@ -86,8 +87,28 @@
 }
 
 .menu__link {
+  position: relative;
+
   font-size: 12px;
   line-height: 30px;
   color: #737480;
   text-transform: uppercase;
+
+  &.mPS2id-highlight-last {
+    font-size: 14px;
+    font-weight: 700;
+    color: #36394d;
+
+    &::before {
+      position: absolute;
+      top: 5px;
+      left: -20px;
+      width: 6px;
+      height: 6px;
+      transform: rotate(45deg);
+
+      background: linear-gradient(45deg, transparent 55%, @brand-color 55%);
+      content: "";
+    }
+  }
 }
