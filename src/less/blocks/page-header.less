@@ -58,6 +58,7 @@
   height: 15px;
 
   border: none;
+  outline: none;
   background-color: transparent;
   z-index: 12;
 
@@ -84,21 +85,28 @@
   &--opened {
     right: 18px;
 
-    &::before,
-    &::after {
-      width: 20px;
-      height: 2px;
+    &::before {
+      animation: burger-to-cross-1 0.5s;
+      animation-fill-mode: forwards;
     }
+
+    &::after {
+      animation: burger-to-cross-2 0.5s;
+      animation-fill-mode: forwards;
+    }
+  }
+
+  &--closed {
+    right: 19px;
 
     &::before {
-      top: 6px;
-      transform: rotate(45deg);
+      animation: cross-to-burger-1 0.5s;
+      animation-fill-mode: forwards;
     }
 
     &::after {
-      top: 6px;
-      box-shadow: 0 0 0 0 @dark-text;
-      transform: rotate(-45deg);
+      animation: cross-to-burger-2 0.5s;
+      animation-fill-mode: forwards;
     }
   }
 }

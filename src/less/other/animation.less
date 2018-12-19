@@ -1,0 +1,111 @@
+@keyframes open-menu {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes close-menu {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+@keyframes burger-to-cross-1 {
+  0% {
+    top: 0;
+    width: 22px;
+    height: 3px;
+    transform: rotate(0);
+  }
+
+  50% {
+    top: 6px;
+    width: 22px;
+    height: 3px;
+    transform: rotate(0);
+  }
+
+  100% {
+    top: 6px;
+    width: 20px;
+    height: 2px;
+    transform: rotate(45deg);
+  }
+}
+
+@keyframes burger-to-cross-2 {
+  0% {
+    width: 22px;
+    height: 3px;
+    box-shadow: 0 6px 0 0 @dark-text;
+    transform: rotate(0);
+  }
+
+  50% {
+    width: 22px;
+    height: 3px;
+    box-shadow: 0 0 0 0 @dark-text;
+    transform: rotate(0);
+  }
+
+  100% {
+    width: 20px;
+    height: 2px;
+    box-shadow: 0 0 0 0 @dark-text;
+    transform: rotate(-45deg);
+  }
+}
+
+@keyframes cross-to-burger-1 {
+  0% {
+    top: 6px;
+    width: 20px;
+    height: 2px;
+    transform: rotate(45deg);
+  }
+
+  50% {
+    top: 6px;
+    width: 22px;
+    height: 3px;
+    transform: rotate(0);
+  }
+
+  100% {
+    top: 0;
+    width: 22px;
+    height: 3px;
+    transform: rotate(0);
+  }
+}
+
+@keyframes cross-to-burger-2 {
+  0% {
+    width: 20px;
+    height: 2px;
+    box-shadow: 0 0 0 0 @dark-text;
+    transform: rotate(-45deg);
+  }
+
+  50% {
+    width: 22px;
+    height: 3px;
+    box-shadow: 0 0 0 0 @dark-text;
+    transform: rotate(0);
+  }
+
+  100% {
+    width: 22px;
+    height: 3px;
+    box-shadow: 0 6px 0 0 @dark-text;
+    transform: rotate(0);
+  }
+}

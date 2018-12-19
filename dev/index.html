@@ -9,39 +9,38 @@
     <link rel="preload" href="fonts/GothamPro.woff2" as="font" crossorigin="">
     <link rel="preload" href="fonts/GothamPro-Medium.woff2" as="font" crossorigin="">
     <link rel="preload" href="fonts/GothamPro-Bold.woff2" as="font" crossorigin="">
-    <link rel="preload" href="js/menu.js" as="script">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
-    <header class="page-header">
+    <header class="page-header" id="home">
       <div class="container">
         <div class="page-header__logo-wrapper">
           <div class="page-header__logo-primary">Компания</div>
           <div class="page-header__logo-secondary">по продаже земли</div>
         </div>
 
-        <button class="page-header__menu-button" type="button">
+        <button class="page-header__menu-button page-header__menu-button--closed" type="button">
           <span class="visually-hidden">Меню</span>
         </button>
 
-        <div class="menu">
+        <div class="menu menu--closed">
           <p class="menu__tel-wrapper">
             <b class="menu__tel-number">8 950 971 00 00</b>
             <button class="menu__tel-button">Позвоните мне</button>
           </p>
           <nav class="menu__wrapper">
             <ul class="menu__list">
-              <li class="menu__item"><a href="#" class="menu__link">Главная</a></li>
-              <li class="menu__item"><a href="#" class="menu__link">Галерея</a></li>
-              <li class="menu__item"><a href="#" class="menu__link">Сколько это в цифрах?</a></li>
-              <li class="menu__item"><a href="#" class="menu__link">Расположение</a></li>
-              <li class="menu__item"><a href="#" class="menu__link">Объекты недвижимости</a></li>
-              <li class="menu__item"><a href="#" class="menu__link">Сферы применения</a></li>
-              <li class="menu__item"><a href="#" class="menu__link">Акция</a></li>
-              <li class="menu__item"><a href="#" class="menu__link">Доп. возможности</a></li>
-              <li class="menu__item"><a href="#" class="menu__link">Преимущества</a></li>
-              <li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+              <li class="menu__item"><a href="#home" class="menu__link">Главная</a></li>
+              <li class="menu__item"><a href="#gallery" class="menu__link">Галерея</a></li>
+              <li class="menu__item"><a href="#comparing" class="menu__link">Сколько это в цифрах?</a></li>
+              <li class="menu__item"><a href="#location" class="menu__link">Расположение</a></li>
+              <li class="menu__item"><a href="#objects" class="menu__link">Объекты недвижимости</a></li>
+              <li class="menu__item"><a href="#use" class="menu__link">Сферы применения</a></li>
+              <li class="menu__item"><a href="#conditions" class="menu__link">Акция</a></li>
+              <li class="menu__item"><a href="#additional" class="menu__link">Доп. возможности</a></li>
+              <li class="menu__item"><a href="#advantages" class="menu__link">Преимущества</a></li>
+              <li class="menu__item"><a href="#contacts" class="menu__link">Контакты</a></li>
             </ul>
           </nav>
           <ul class="socials socials--menu">
@@ -85,7 +84,7 @@
       </section>
 
       <section class="gallery">
-        <h2 class="gallery__heading heading">
+        <h2 class="gallery__heading heading" id="gallery">
           <span class="heading__side-element heading__side-element--left heading__left-line"></span>
           <span class="heading__text">Галерея</span>
           <span class="heading__side-element heading__side-element--right"></span>
@@ -112,7 +111,7 @@
       </section>
 
       <section class="comparing">
-        <h2 class="comparing__heading heading heading--right">
+        <h2 class="comparing__heading heading heading--right" id="comparing">
           <span class="heading__text">Сколько это в цифрах?</span>
           <span class="heading__side-element heading__side-element--right heading__right-line"></span>
         </h2>
@@ -145,7 +144,7 @@
       </section>
 
       <section class="location">
-        <h2 class="location__heading heading">
+        <h2 class="location__heading heading" id="location">
           <span class="heading__side-element heading__side-element--left heading__left-line"></span>
           <span class="heading__text">221 км от Новосибирска</span>
           <span class="heading__side-element heading__side-element--right"></span>
@@ -167,7 +166,7 @@
         </section>
 
       <section class="objects">
-        <h2 class="objects__heading heading heading--right">
+        <h2 class="objects__heading heading heading--right" id="objects">
           <span class="heading__text">Объекты недвижимости</span>
           <span class="heading__side-element heading__side-element--right heading__right-line"></span>
         </h2>
@@ -217,7 +216,7 @@
       </section>
 
       <section class="use">
-        <h2 class="use__heading heading">
+        <h2 class="use__heading heading" id="use">
           <span class="heading__side-element heading__side-element--left heading__left-line"></span>
           <span class="heading__text">Возможные сферы применения</span>
           <span class="heading__side-element heading__side-element--right"></span>
@@ -289,7 +288,7 @@
         </div>
       </section>
 
-      <section class="conditions">
+      <section class="conditions" id="conditions">
         <h2 class="conditions__heading main-heading">
           <span class="main-heading__pre-heading">акция:</span>
           <b class="main-heading__text-heading">Выгодные условия</b>
@@ -306,7 +305,7 @@
       </section>
 
       <section class="additional">
-        <h2 class="additional__heading heading">
+        <h2 class="additional__heading heading" id="additional">
           <span class="heading__side-element heading__side-element--left heading__left-line"></span>
           <span class="heading__text">Дополнительные возможности</span>
           <span class="heading__side-element heading__side-element--right"></span>
@@ -340,7 +339,7 @@
       </section>
 
       <section class="advantages">
-        <h2 class="advantages__heading heading heading--right">
+        <h2 class="advantages__heading heading heading--right" id="advantages">
           <span class="heading__text">Преимущества предложения</span>
           <span class="heading__side-element heading__side-element--right heading__right-line"></span>
         </h2>
@@ -393,7 +392,7 @@
       </section>
 
       <section class="contacts">
-        <h2 class="contacts__heading heading heading--left">
+        <h2 class="contacts__heading heading heading--left" id="contacts">
           <span class="heading__side-element heading__side-element--left heading__left-line"></span>
           <span class="heading__text">Наши контакты</span>
           <span class="heading__side-element heading__side-element--right"></span>
@@ -575,7 +574,7 @@
       <div class="popup__header-element"></div>
     </div>
 
-    <div class="overlay"></div>
+    <div class="overlay" id="overlay"></div>
 
     <script src="js/all.js"></script>
     <script src="js/librarys/jquery-3.3.1.min.js"></script>

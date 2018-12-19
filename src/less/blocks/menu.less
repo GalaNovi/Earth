@@ -1,17 +1,23 @@
 .menu {
+  display: none;
   position: absolute;
   top: 0;
   left: 0;
-  transform: translateX(-100%);
+  transform: translateY(-100%);
   padding: 12px 10px 57px;
   width: 100%;
 
   background-color: #ffffff;
   z-index: 11;
-  transition: transform 0.5s;
 
   &--opened {
-    transform: translateX(0);
+    animation: open-menu 0.5s;
+    animation-fill-mode: forwards;
+  }
+
+  &--closed {
+    animation: close-menu 0.5s;
+    animation-fill-mode: forwards;
   }
 }
 
