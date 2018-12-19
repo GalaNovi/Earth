@@ -15,14 +15,7 @@
 
   cursor: pointer;
   transition: background-color 0.1s;
-
-  &--red {
-    background-color: #d76268;
-
-    .button__border {
-      border-color: rgba(154, 205, 62, 0.1);
-    }
-  }
+  z-index: 5;
 
   &::before {
     position: absolute;
@@ -47,6 +40,18 @@
 
     background: linear-gradient(to bottom, rgba(154, 205, 62, 0.3) 3px, transparent 3px, transparent calc(100% - 3px), rgba(154, 205, 62, 0.3) calc(100% - 3px));
     content: "";
+  }
+
+  &--red {
+    background-color: #d76268;
+
+    &::after {
+      background: linear-gradient(to bottom, rgba(215, 98, 104, 0.3) 3px, transparent 3px, transparent calc(100% - 3px), rgba(215, 98, 104, 0.3) calc(100% - 3px));
+    }
+
+    .button__border {
+      border-color: rgba(154, 205, 62, 0.1);
+    }
   }
 }
 

@@ -24,8 +24,7 @@
   flex-wrap: wrap;
   margin: 0 auto;
   padding-top: 12px;
-  padding-right: 50px;
-  padding-bottom: 11px;
+  padding-right: 40px;
   width: 240px;
 
   b {
@@ -38,6 +37,60 @@
 
   &::before {
     position: absolute;
+    top: 29px;
+    right: -2px;
+    width: 35px;
+    height: 35px;
+
+    background: url("../img/icons/contacts/icon-bg.png") no-repeat center;
+
+    content: "";
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+  }
+
+  &--phone {
+    &::after {
+      top: 41px;
+      right: 12px;
+      width: 9px;
+      height: 10px;
+
+      background: url("../img/svg/phone.svg") no-repeat center;
+    }
+  }
+
+  &--email {
+    margin-bottom: 24px;
+
+    &::after {
+      top: 40px;
+      right: 11px;
+      width: 11px;
+      height: 11px;
+
+      background: url("../img/svg/email.svg") no-repeat center;
+    }
+  }
+}
+
+.contacts__title {
+  position: relative;
+  display: block;
+  margin-bottom: 4px;
+  padding-top: 12px;
+  padding-bottom: 3px;
+  width: 100%;
+
+  font-size: 13px;
+  line-height: 18px;
+  color: #737480;
+
+  &::before {
+    position: absolute;
     left: 0;
     top: 0;
     width: 100%;
@@ -46,42 +99,6 @@
     background: linear-gradient(to right, transparent, #ebedf5, transparent);
     content: "";
   }
-
-  &::after {
-    position: absolute;
-    right: -3px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 35px;
-    height: 33px;
-
-    content: "";
-  }
-
-  &--phone {
-    &::after {
-      background: url("../img/icons/contacts/phone.png") no-repeat center;
-    }
-  }
-
-  &--email {
-    margin-bottom: 14px;
-
-    &::after {
-      background: url("../img/icons/contacts/email.png") no-repeat center;
-    }
-  }
-}
-
-.contacts__title {
-  position: relative;
-  margin-bottom: 4px;
-  padding-bottom: 3px;
-  width: 100%;
-
-  font-size: 13px;
-  line-height: 18px;
-  color: #737480;
 
   &::after {
     position: absolute;
@@ -97,7 +114,7 @@
 }
 
 .contacts__socials {
-  margin-bottom: 32px;
+  margin-bottom: 20px;
 }
 
 .contacts__notify {

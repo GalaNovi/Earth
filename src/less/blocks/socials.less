@@ -40,7 +40,9 @@
 
 .socials__link {
   position: relative;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 36px;
   height: 36px;
   transform: rotate(45deg);
@@ -62,35 +64,11 @@
     height: 28px;
 
     background-color: #f0f1f7;
+    z-index: -1;
   }
+}
 
-  &::after {
-    width: 16px;
-    height: 16px;
-    transform: translate(-50%, -50%) rotate(-45deg);
-  }
-
-  &--instagram {
-    &::after {
-      background: url("../img/icons/instagram.png") no-repeat center;
-    }
-  }
-
-  &--facebook {
-    &::after {
-      background: url("../img/icons/facebook.png") no-repeat center;
-    }
-  }
-
-  &--skype {
-    &::after {
-      background: url("../img/icons/skype.png") no-repeat center;
-    }
-  }
-
-  &--vkontakte {
-    &::after {
-      background: url("../img/icons/vkontakte.png") no-repeat center;
-    }
-  }
+.socials__icon {
+  transform: rotate(-45deg);
+  fill: rgba(54, 57, 77, 0.8);
 }
