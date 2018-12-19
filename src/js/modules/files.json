@@ -1,5 +1,6 @@
 [
   "src/js/modules/menu.js",
   "src/js/modules/popups.js",
-  "src/js/modules/sliders.js"
+  "src/js/modules/sliders.js",
+  "src/js/modules/use-switcher.js"
 ]
