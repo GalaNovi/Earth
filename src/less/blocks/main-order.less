@@ -4,6 +4,7 @@
   padding-top: 160px;
   padding-bottom: 132px;
   background: #5b6951 url("../img/bg/main-bg.jpg") no-repeat center bottom;
+  z-index: -1;
 }
 
 .main-order__text {
@@ -25,9 +26,12 @@
   padding: 20px 48px 18px;
 
   box-shadow: 0 25px 70px 0 rgba(0, 0, 0, 0.2);
-  outline: 1px solid rgba(154, 205, 62, 0.1);
 
   &::before {
     background-image: linear-gradient(to right, #ffffff 4px, transparent 4px, transparent calc(100% - 4px), #ffffff calc(100% - 4px));
+  }
+
+  .button__border {
+    border-color: rgba(154, 205, 62, 0.1);
   }
 }

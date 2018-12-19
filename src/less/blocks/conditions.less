@@ -5,6 +5,7 @@
   padding-bottom: 125px;
 
   background: #5b6951 url("../img/bg/conditions-bg.jpg") no-repeat center bottom;
+  z-index: -1;
 }
 
 .conditions__text {
@@ -24,14 +25,9 @@
 .conditions__button {
   margin-left: 30px;
   padding: 20px 53px 18px;
-  outline: 1px solid rgba(154, 205, 62, 0.1);
   box-shadow: 0 25px 70px 0 rgba(0, 0, 0, 0.2);
 
   &::before {
     background-image: linear-gradient(to right, #ffffff 4px, transparent 4px, transparent calc(100% - 4px), #ffffff calc(100% - 4px));
-  }
-
-  &::after {
-    background: linear-gradient(to bottom, rgba(215, 98, 104, 0.3) 3px, transparent 3px, transparent calc(100% - 3px), rgba(215, 98, 104, 0.3) calc(100% - 3px));
   }
 }
