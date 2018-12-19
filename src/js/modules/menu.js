@@ -41,7 +41,9 @@
 
       // Действия прри клике на кнопку меню
       var closeOpenMenu = function (evt) {
-        evt.preventDefault();
+        if (evt) {
+          evt.preventDefault();
+        }
         switchBurger();
         switchMenu();
         if (overlay) {
@@ -49,12 +51,17 @@
         }
       };
 
+      // При нажатии на ссылку закрывает меню
+      var onInternalLinkClick = function () {
+        closeOpenMenu();
+      };
+
       // Обработчик клика на кнопке меню
       burger.addEventListener('click', closeOpenMenu);
 
       // Слушатели для внутренних ссылок. При переходе меню закрывается
       internalLinks.forEach(function (link) {
-        link.addEventListener('click', closeOpenMenu);
+        link.addEventListener('click', onInternalLinkClick);
       });
 
       // По тапу на затемняющий слой закрывается меню

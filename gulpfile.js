@@ -149,13 +149,13 @@ gulp.task('serve', function () { // Запускает сервер
 
 gulp.task('build', gulp.series(
   'clean',
-  'sprite:svg',
+  // 'sprite:svg',
   gulp.parallel(
     'style',
     'css:copy',
     'html',
     'images',
-    'webp',
+    // 'webp',
     'scripts',
     'fonts:copy'
   )
