@@ -47,9 +47,17 @@ $('.comparing__list').slick({
   accessibility: false,
   variableWidth: true,
   centerMode: true,
+  adaptiveHeight: true,
   dots: true,
+  mobileFirst: true,
   prevArrow: '<button class="comparing__list-arrow comparing__list-arrow--previous" type="button"><span class="visually-hidden">Предыдущий слайд</span></button>',
-  nextArrow: '<button class="comparing__list-arrow comparing__list-arrow--next" type="button"><span class="visually-hidden">Следующий слайд</span></button>'
+  nextArrow: '<button class="comparing__list-arrow comparing__list-arrow--next" type="button"><span class="visually-hidden">Следующий слайд</span></button>',
+  responsive: [
+    {
+      breakpoint: 767,
+      settings: "unslick"
+    }
+  ]
 });
 
 // Слайдер в блоке "Преимущества"

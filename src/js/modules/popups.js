@@ -6,6 +6,7 @@
     var CLOSE_BUTTON_CLASS = 'popup__close';
 
     var callButtonElement = document.querySelector('.menu__tel-button'); // Кнопка "Позвоните мне"
+    var callButtonDesktopElement = document.querySelector('.page-header__tel-button'); // Кнопка "Позвоните мне" (десктоп)
     var callPopupElement = document.querySelector('.popup--call'); // Попап "Заказать звонок"
     var costButtonElement = document.querySelector('.main-order__button'); // Кнопка "Узнать стоимость"
     var costPopupElement = document.querySelector('.popup--cost'); // Попап "Узнать стоимость"
@@ -95,6 +96,7 @@
     // Инициализируем все попапы
     initPopup(costButtonElement, costPopupElement, overlayElement);
     initPopup(callButtonElement, callPopupElement, overlayElement);
+    initPopup(callButtonDesktopElement, callPopupElement, overlayElement);
     initPopup(videoButtonElement, videoPopupElement, overlayElement);
     initPopup(actionButtonElement, actionPopupElement, overlayElement);
     initPopup(offerButtonElement, offerPopupElement, overlayElement);

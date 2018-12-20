@@ -4,6 +4,16 @@
   padding-top: 160px;
   padding-bottom: 132px;
   background: #5b6951 url("../img/bg/main-bg.jpg") no-repeat center bottom;
+
+  .container {
+    max-width: 580px;
+  }
+}
+
+.main-order__heading {
+  margin: 0 auto;
+  width: auto;
+  max-width: 580px;
 }
 
 .main-order__text {
@@ -32,5 +42,23 @@
 
   .button__border {
     border-color: rgba(154, 205, 62, 0.1);
+  }
+}
+
+@media (min-width: @tablet) {
+  .main-order {
+    padding-top: 110px;
+    background: #5b6951 url("../img/bg/main-bg-desktop.jpg") no-repeat center bottom;
+  }
+
+  .main-order__socials {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+  }
+
+  .main-order__button {
+    padding: 13px 50px 11px;
   }
 }

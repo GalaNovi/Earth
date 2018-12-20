@@ -146,23 +146,6 @@
       background-image: url("../img/svg/email-form.svg");
     }
   }
-
-  &--message {
-    &::before,
-    &::after {
-      display: none;
-    }
-
-    ::-webkit-scrollbar-button {
-      width: 6px;
-      height: 0;
-    }
-
-    ::-webkit-scrollbar-track {
-      background-color: #32312e;
-      box-shadow: 0 0 3px #000000 inset;
-    }
-  }
 }
 
 .popup__form-field {
@@ -251,5 +234,38 @@
     transform: translateX(-50%);
     width: 2px;
     height: 100%;
+  }
+}
+
+@media (min-width: @tablet) {
+  .popup {
+    padding: 16px 40px 65px;
+    width: 400px;
+
+    &::before {
+      top: -3px;
+      right: 40px;
+    }
+  }
+
+  .popup__heading {
+    margin-bottom: 15px;
+
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .popup__description {
+    margin-bottom: 25px;
+
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .popup__form-field {
+    height: 60px;
+
+    font-size: 18px;
+    line-height: 26px;
   }
 }

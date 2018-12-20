@@ -113,3 +113,83 @@
 .page-header__tel-wrapper {
   display: none;
 }
+
+@media (min-width: @tablet) {
+  .page-header {
+    position: static;
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  .page-header__menu-button {
+    display: none;
+  }
+
+  .page-header__tel-wrapper {
+    display: flex;
+    margin: 0;
+  }
+
+  .page-header__tel-number {
+    position: relative;
+    margin-right: 30px;
+    padding-left: 60px;
+
+    font-size: 14px;
+    line-height: 18px;
+    color: @dark-text;
+    font-weight: 700;
+
+    &::before {
+      position: absolute;
+      top: 50%;
+      left: 10px;
+      transform: translateY(-50%);
+      width: 35px;
+      height: 35px;
+
+      background: url("../img/icons/contacts/icon-bg.png") no-repeat center;
+      content: "";
+    }
+
+    &::after {
+      position: absolute;
+      top: 50%;
+      left: 22px;
+      transform: translateY(-50%);
+      width: 9px;
+      height: 10px;
+
+      background: url("../img/svg/phone.svg") no-repeat center;
+      content: "";
+    }
+  }
+
+  .page-header__tel-button {
+    position: relative;
+    padding: 0;
+    padding-bottom: 3px;
+
+    color: #737480;
+    font-size: 11px;
+    line-height: 14px;
+
+    border: none;
+    outline: none;
+    background-color: transparent;
+
+    &::after {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 1px;
+
+      background: @line-gradient;
+      content: "";
+    }
+  }
+}

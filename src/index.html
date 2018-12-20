@@ -105,11 +105,39 @@
           </p>
           <button class="main-order__button button">Узнать стоимость<span class="button__border" aria-hidden="true"></span></button>
         </div>
-        <ul class="socials socials--main-order">
-          <li class="socials__item"><a class="socials__link" href="#"><span class="visually-hidden">Интаграм</span></a></li>
-          <li class="socials__item"><a class="socials__link" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
-          <li class="socials__item"><a class="socials__link" href="#"><span class="visually-hidden">Скайп</span></a></li>
-          <li class="socials__item"><a class="socials__link" href="#"><span class="visually-hidden">Вконтакте</span></a></li>
+        <ul class="main-order__socials socials socials--main-order">
+          <li class="socials__item">
+            <a class="socials__link socials__link--instagram" href="#">
+              <span class="visually-hidden">Интаграм</span>
+              <svg class="socials__icon" width="12" height="12" aria-hidden="true">
+                <use xlink:href="#inline-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link socials__link--facebook" href="#">
+              <span class="visually-hidden">Фейсбук</span>
+              <svg class="socials__icon" width="7" height="13" aria-hidden="true">
+                <use xlink:href="#inline-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link socials__link--skype" href="#">
+              <span class="visually-hidden">Скайп</span>
+              <svg class="socials__icon" width="13" height="13" aria-hidden="true">
+                <use xlink:href="#inline-skype"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link socials__link--vkontakte" href="#">
+              <span class="visually-hidden">Вконтакте</span>
+              <svg class="socials__icon" width="16" height="9" aria-hidden="true">
+                <use xlink:href="#inline-vkontakte"></use>
+              </svg>
+            </a>
+          </li>
         </ul>
         <div class="main-order__notify notify">
           Прямая продажа от собственника со сроком окупаемости от 1 года
@@ -498,9 +526,10 @@
         </h2>
         <div class="container">
           <p class="location__text">
-            Земля находится возле <b>с. Убинское</b> на границе Новосибирской, Томской областей и Республики Казахстан.
+            Земля находится возле <b>с. Убинское</b> на границе Новосибирской, Томской областей и Республики Казахстан.
           </p>
           <picture class="location__map">
+            <source media="(min-width: 786px)" srcset="img/content/location/map-desktop.jpg">
             <img src="img/content/location/map-mobile.jpg" alt="Карта месторасположения">
           </picture>
           <p class="location__notify">

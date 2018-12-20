@@ -68,3 +68,37 @@
 .location__button {
   width: 232px;
 }
+
+@media (min-width: @tablet) {
+  .location {
+    .container {
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 55px;
+    }
+  }
+
+  .location__text {
+    margin: auto 0;
+    margin-right: 2.7%;
+    width: 22.9%;
+    padding: 0;
+  }
+
+  .location__map {
+    width: 74.3%;
+  }
+
+  .location__notify {
+    position: absolute;
+    left: 20px;
+    bottom: 0;
+    margin: 0;
+    width: 40%;
+  }
+
+  .location__button {
+    width: auto;
+  }
+}

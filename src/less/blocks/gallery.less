@@ -102,3 +102,47 @@
 .gallery__counter-slash {
   margin: 0 3px 0 5px;
 }
+
+@media (min-width: @tablet) {
+  .gallery {
+    .container {
+      display: flex;
+    }
+  }
+
+  .gallery__list {
+    margin-right: 6.3%;
+    width: 65.76%;
+
+    &::before {
+      width: 175px;
+      height: 60px;
+    }
+  }
+
+  .gallery__text-wrapper {
+    padding: 0;
+    width: 27.92%;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .gallery__list-text {
+    width: 100%;
+    margin-bottom: 35px;
+  }
+
+  .gallery__list-arrow {
+    bottom: 23px;
+    width: 16px;
+    height: 11px;
+
+    &--previous {
+      left: 36px;
+    }
+
+    &--next {
+      left: 122px;
+    }
+  }
+}
