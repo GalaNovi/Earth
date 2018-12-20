@@ -52,3 +52,39 @@
     content: "";
   }
 }
+
+@media (min-width: @desktop) {
+  .main-heading {
+    // margin-bottom: 5px;
+    padding: 0 124px;
+  }
+
+  .main-heading__pre-heading {
+    margin-bottom: 22px;
+
+    font-size: 20px;
+    line-height: 24px;
+
+    &::before {
+      top: 50%;
+      left: -63px;
+
+      width: 40px;
+      height: 1px;
+    }
+  }
+
+  .main-heading__text-heading {
+    margin-left: -2px;
+    margin-bottom: 11px;
+
+    font-size: 50px;
+    line-height: 60px;
+    letter-spacing: 10px;
+
+    &::before {
+      top: 27px;
+      left: -45px;
+    }
+  }
+}

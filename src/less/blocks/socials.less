@@ -118,3 +118,34 @@
     }
   }
 }
+
+@media (min-width: @desktop) {
+  .socials {
+    &--main-order {
+      .socials__link {
+        transition: 0.2s;
+
+        &::before {
+          transition: 0.2s;
+        }
+
+        &:hover,
+        &:focus {
+          border: 1px solid rgba(255, 255, 255, 1);
+
+          &::before {
+            background-color: rgba(154, 205, 62, 0.4);
+          }
+
+          .socials__icon {
+            fill: #ffffff;
+          }
+        }
+      }
+
+      .socials__icon {
+        transition: 0.2s;
+      }
+    }
+  }
+}
