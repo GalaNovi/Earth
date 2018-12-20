@@ -74,15 +74,23 @@
     .container {
       position: relative;
       display: flex;
+      align-items: stretch;
+      align-content: stretch;
       flex-wrap: wrap;
       margin-bottom: 55px;
     }
   }
 
-  .location__text {
-    margin: auto 0;
+  .location__text-wrapper {
+    display: flex;
+    align-items: center;
     margin-right: 2.7%;
+    margin-bottom: 14%;
     width: 22.9%;
+  }
+
+  .location__text {
+    margin: 0;
     padding: 0;
   }
 

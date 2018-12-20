@@ -166,3 +166,76 @@
     content: "";
   }
 }
+
+@media (min-width: @tablet) {
+  .objects {
+    background: #f0f1f7 url("../img/bg/rhombus-bg-objects-desktop.png") no-repeat center top;
+  }
+
+  .objects__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: auto;
+  }
+
+  .objects__item {
+    // &::before {
+    //   position: absolute;
+    //   top: 76px;
+    //   counter-increment: myCounter;
+    //   content: counter(myCounter, decimal-leading-zero);
+    //   color: @brand-color;
+
+    //   font-size: 30px;
+    //   line-height: 30px;
+    //   font-weight: 700;
+    // }
+
+    // &:nth-child(odd) {
+    //   .objects__item-image {
+    //     margin-left: 60px;
+    //     margin-right: 10px;
+    //   }
+
+    //   .objects__item-text-wrapper {
+    //     align-self: flex-start;
+    //     background: linear-gradient(135deg, #f0f1f7 6%, #717383 6%, #717383 6.7%, #f0f1f7 6.7%);
+
+    //     &::before {
+    //       right: -5px;
+    //       border-right: 1px solid rgba(255, 255, 255, 0.5);
+    //     }
+    //   }
+
+    //   &::before {
+    //     left: 14px;
+    //   }
+    // }
+
+    &:nth-child(even) {
+      .objects__item-image {
+        margin-right: 10px;
+        margin-left: 60px;
+      }
+
+      .objects__item-text-wrapper {
+        align-self: flex-start;
+        padding: 27px 38px 23px;
+        background: linear-gradient(135deg, #f0f1f7 6%, #717383 6%, #717383 6.7%, #f0f1f7 6.7%);
+
+        &::before {
+          left: auto;
+          right: -5px;
+          border-left: none;
+          border-right: 1px solid rgba(255, 255, 255, 0.5);
+        }
+      }
+
+      &::before {
+        right: auto;
+        left: 8px;
+      }
+    }
+  }
+}
