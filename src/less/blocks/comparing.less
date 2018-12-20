@@ -229,7 +229,10 @@
   .comparing {
     padding-top: 112px;
     padding-bottom: 91px;
-    background: linear-gradient(to right, #ffffff 52px, transparent 52px), #f7f8fc url("../img/bg/rhombus-bg-comparing-desktop.png") no-repeat center top;
+
+    @media (min-width: 1260px) {
+      background: linear-gradient(to right, #ffffff 2.7vw, transparent 2.7vw), #f7f8fc url("../img/bg/rhombus-bg-comparing-desktop.png") no-repeat center top;
+    }
   }
 
   .comparing__heading {

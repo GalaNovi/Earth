@@ -61,7 +61,9 @@
     padding-top: 113px;
     padding-bottom: 123px;
 
-    background: linear-gradient(to right, #ffffff 52px, transparent 52px), #5b6951 url("../img/bg/conditions-bg-desktop.jpg") no-repeat right bottom;
+    @media (min-width: 1260px) {
+      background: linear-gradient(to right, #ffffff 2.7vw, transparent 2.7vw), #5b6951 url("../img/bg/conditions-bg-desktop.jpg") no-repeat right bottom;
+    }
 
     .container {
       max-width: 1170px;
@@ -69,8 +71,9 @@
   }
 
   .conditions__heading {
-    padding: 0 95px;
-    max-width: @desktop;
+    padding: 0;
+    padding-left: 120px;
+    max-width: none;
   }
 
   .conditions__text {

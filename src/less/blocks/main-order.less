@@ -70,9 +70,12 @@
 
 @media (min-width: @desktop) {
   .main-order {
-    margin-right: 51px;
     padding-top: 263px;
     padding-bottom: 277px;
+
+    @media (min-width: 1260px) {
+      margin-right: 2.7vw;
+    }
 
     .container {
       max-width: 1170px;
@@ -80,7 +83,7 @@
   }
 
   .main-order__heading {
-    max-width: @desktop;
+    max-width: none;
   }
 
   .main-order__text {
@@ -93,7 +96,7 @@
   }
 
   .main-order__socials {
-    left: 59px;
+    left: 3.05vw;
   }
 
   .main-order__button {

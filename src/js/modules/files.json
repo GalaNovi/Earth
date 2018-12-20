@@ -3,5 +3,6 @@
   "src/js/modules/popups.js",
   "src/js/modules/sliders.js",
   "src/js/modules/use-switcher.js",
-  "src/js/modules/scroll-menu.js"
+  "src/js/modules/scroll-menu.js",
+  "src/js/modules/margin-headings.js"
 ]

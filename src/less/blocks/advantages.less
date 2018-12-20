@@ -247,7 +247,10 @@
   .advantages {
     padding-top: 112px;
     padding-bottom: 124px;
-    background: linear-gradient(to left, #ffffff 52px, transparent 52px), #f7f8fc url("../img/bg/rhombus-bg-contacts-desktop.png") no-repeat center bottom;
+
+    @media (min-width: 1260px) {
+      background: linear-gradient(to left, #ffffff 2.7vw, transparent 2.7vw), #f7f8fc url("../img/bg/rhombus-bg-contacts-desktop.png") no-repeat center bottom;
+    }
   }
 
   .advantages__heading {
