@@ -67,6 +67,13 @@ $('.advantages__list').slick({
   centerMode: true,
   adaptiveHeight: true,
   dots: true,
+  mobileFirst: true,
   prevArrow: '<button class="advantages__list-arrow advantages__list-arrow--previous" type="button"><span class="visually-hidden">Предыдущий слайд</span></button>',
-  nextArrow: '<button class="advantages__list-arrow advantages__list-arrow--next" type="button"><span class="visually-hidden">Следующий слайд</span></button>'
+  nextArrow: '<button class="advantages__list-arrow advantages__list-arrow--next" type="button"><span class="visually-hidden">Следующий слайд</span></button>',
+  responsive: [
+    {
+      breakpoint: 767,
+      settings: "unslick"
+    }
+  ]
 });

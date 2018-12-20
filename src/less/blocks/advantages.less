@@ -187,3 +187,51 @@
     background-image: url("../img/icons/sliders/arrow2-disabled.png");
   }
 }
+
+@media (min-width: @tablet) {
+  .advantages__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: auto;
+  }
+
+  .advantages__item {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    width: auto;
+    transform: translateX(0);
+
+    &--pin {
+      width: calc(57.2% - 20px);
+    }
+
+    &--objects {
+      width: calc(40.09% - 20px);
+    }
+
+    &--route {
+      width: calc(48.64% - 20px);
+    }
+
+    &--water {
+      width: calc(48.64% - 20px);
+    }
+
+    &--flower {
+      width: calc(40.09% - 20px);
+    }
+
+    &--money {
+      width: calc(57.2% - 20px);
+    }
+  }
+
+  .advantages__button {
+    padding: 12px 27px 10px;
+    width: auto;
+  }
+}
