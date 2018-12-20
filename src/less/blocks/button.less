@@ -36,9 +36,14 @@
     left: 9%;
 
     width: 21.5%;
-    height: calc(100% + 6px);
+    height: 100%;
 
-    background: linear-gradient(to bottom, rgba(154, 205, 62, 0.3) 3px, transparent 3px, transparent calc(100% - 3px), rgba(154, 205, 62, 0.3) calc(100% - 3px));
+    box-sizing: content-box;
+    border-top: 3px solid rgba(154, 205, 62, 0.3);
+    border-bottom: 3px solid rgba(154, 205, 62, 0.3);
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    transition: 0.5s;
     content: "";
   }
 
@@ -46,7 +51,8 @@
     background-color: #d76268;
 
     &::after {
-      background: linear-gradient(to bottom, rgba(215, 98, 104, 0.3) 3px, transparent 3px, transparent calc(100% - 3px), rgba(215, 98, 104, 0.3) calc(100% - 3px));
+      border-top: 3px solid rgba(215, 98, 104, 0.3);
+      border-bottom: 3px solid rgba(215, 98, 104, 0.3);
     }
 
     .button__border {
@@ -74,44 +80,25 @@
 
 @media (min-width: @tablet) {
   .button {
-    // padding: 12px 27px 10px;
-
     font-size: 14px;
     line-height: 36px;
 
-    // &::before {
-    //   position: absolute;
-    //   top: 50%;
-    //   left: -6px;
-    //   transform: translateY(-50%);
+    &:hover {
+      &::after {
+        left: -3px;
+        width: 100%;
+        border-left: 3px solid rgba(154, 205, 62, 0.3);
+        border-right: 3px solid rgba(154, 205, 62, 0.3);
+      }
+    }
 
-    //   width: calc(100% + 12px);
-    //   height: 8px;
-
-    //   background-image: linear-gradient(to right, #7d84b2 4px, transparent 4px, transparent calc(100% - 4px), #7d84b2 calc(100% - 4px));
-    //   content: "";
-    // }
-
-    // &::after {
-    //   position: absolute;
-    //   top: -3px;
-    //   left: 9%;
-
-    //   width: 21.5%;
-    //   height: calc(100% + 6px);
-
-    //   background: linear-gradient(to bottom, rgba(154, 205, 62, 0.3) 3px, transparent 3px, transparent calc(100% - 3px), rgba(154, 205, 62, 0.3) calc(100% - 3px));
-    //   content: "";
-    // }
-
-    // &--red {
-    //   &::after {
-    //     background: linear-gradient(to bottom, rgba(215, 98, 104, 0.3) 3px, transparent 3px, transparent calc(100% - 3px), rgba(215, 98, 104, 0.3) calc(100% - 3px));
-    //   }
-
-    //   .button__border {
-    //     border-color: rgba(154, 205, 62, 0.1);
-    //   }
-    // }
+    &--red {
+      &:hover {
+        &::after {
+          border-left: 3px solid rgba(215, 98, 104, 0.3);
+          border-right: 3px solid rgba(215, 98, 104, 0.3);
+        }
+    }
+    }
   }
 }

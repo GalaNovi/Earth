@@ -101,3 +101,32 @@
     }
   }
 }
+
+@media (min-width: @tablet) {
+  .heading {
+    letter-spacing: 6.2px;
+
+    &--right {
+      padding-left: 20px;
+      text-align: left;
+    }
+  }
+
+  .heading__side-element {
+    &--left {
+      margin-right: 50px;
+    }
+
+    &--right {
+      margin-left: 50px;
+    }
+  }
+
+  .heading__left-line {
+    &::before {
+      right: 0;
+      width: 8px;
+      height: 8px;
+    }
+  }
+}

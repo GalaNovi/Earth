@@ -66,6 +66,7 @@
       transform: translateY(-50%);
 
       border-radius: 50%;
+      border: none;
       background: none;
       background-color: #9a9ca6;
       content: "";
@@ -245,7 +246,7 @@
 }
 
 .use__download-button {
-  padding: 20px 37px 18px;    padding: 12px 27px 10px;
+  padding: 12px 27px 10px;
 }
 
 @media (min-width: @tablet) {
@@ -254,6 +255,222 @@
   }
 
   .use__download-button {
-    padding: 12px 27px 10px;
+    padding: 13px 57px 11px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .use {
+    padding-top: 115px;
+    padding-bottom: 85px;
+
+    .container {
+      padding: 0 30px;
+    }
+  }
+
+  .use__heading {
+    margin-bottom: 68px;
+  }
+
+  .use__buttons-wrapper {
+    margin-bottom: 65px;
+  }
+
+  .use__button {
+    padding: 13px 43px;
+
+    font-size: 18px;
+    line-height: 26px;
+
+    &:not(:last-child) {
+      margin-right: 38px;
+
+      &::after {
+        right: -23px;
+        width: 9px;
+        height: 9px;
+        transform: translateY(-50%) rotate(45deg);
+
+        border-radius: 0;
+        background-color: rgba(230, 232, 242, 0.8);
+        cursor: default;
+      }
+    }
+  }
+
+  .use__list {
+    width: auto;
+    margin: 0 -15px;
+    margin-bottom: 34px;
+
+    &::after {
+      bottom: -1px;
+    }
+  }
+
+  .use__item {
+    position: relative;
+    margin: 0 15px;
+    margin-bottom: 30px;
+    width: 255px;
+    height: 143px;
+
+    background: #36394d url("../img/icons/use/icon-bg.png") no-repeat center;
+    cursor: pointer;
+
+    &:hover {
+      .use__item-heading {
+        opacity: 1;
+      }
+
+      .use__item-icon-wrapper {
+        margin-bottom: 0;
+        width: 100%;
+        height: 100%;
+
+        &::before {
+          opacity: 0;
+        }
+      }
+    }
+  }
+
+  .use__item-icon-wrapper {
+    margin-bottom: 0;
+    width: 100%;
+    height: 100%;
+
+    &::before {
+      background-color: transparent;
+      transition: 0.2s;
+    }
+
+    &--cow {
+      background-image: none;
+
+      &::before {
+        background-image: url("../img/icons/use/cow-large.png");
+      }
+    }
+
+    &--fox {
+      background-image: none;
+
+      &::before {
+        background-image: url("../img/icons/use/fox-large.png");
+      }
+    }
+
+    &--pig {
+      background-image: none;
+
+      &::before {
+        background-image: url("../img/icons/use/pig-large.png");
+      }
+    }
+
+    &--rabbit {
+      background-image: none;
+
+      &::before {
+        background-image: url("../img/icons/use/rabbit-large.png");
+      }
+    }
+
+    &--sheep {
+      background-image: none;
+
+      &::before {
+        background-image: url("../img/icons/use/sheep-large.png");
+      }
+    }
+
+    &--horse {
+      background-image: none;
+
+      &::before {
+        background-image: url("../img/icons/use/horse-large.png");
+      }
+    }
+
+    &--duck {
+      background-image: none;
+
+      &::before {
+        background-image: url("../img/icons/use/duck-large.png");
+      }
+    }
+
+    &--grain {
+      background-image: none;
+
+      &::before {
+        background-image: url("../img/icons/use/grain-large.png");
+      }
+    }
+
+    &--root {
+      background-image: none;
+
+      &::before {
+        background-image: url("../img/icons/use/root-large.png");
+      }
+    }
+
+    &--tech {
+      background-image: none;
+
+      &::before {
+        background-image: url("../img/icons/use/tech-large.png");
+      }
+    }
+
+    &--tuber {
+      background-image: none;
+
+      &::before {
+        background-image: url("../img/icons/use/tuber-large.png");
+      }
+    }
+
+    &--food {
+      background-image: none;
+
+      &::before {
+        background-image: url("../img/icons/use/food-large.png");
+      }
+    }
+
+    &--silo {
+      background-image: none;
+
+      &::before {
+        background-image: url("../img/icons/use/silo-large.png");
+      }
+    }
+  }
+
+  .use__item-heading {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    transform: translateY(-50%);
+    padding: 0 20px;
+
+    font-size: 18px;
+    line-height: 24px;
+    color: #ffffff;
+    text-align: center;
+    opacity: 0;
+
+    transition: 0.2s;
+    cursor: default;
+    z-index: 1;
+  }
+
+  .use__download-button {
+    padding: 13px 57px 11px;
   }
 }

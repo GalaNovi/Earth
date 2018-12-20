@@ -35,3 +35,22 @@
     right: -25px;
   }
 }
+
+@media (min-width: @desktop) {
+  .page-footer {
+    padding-top: 15px;
+    padding-bottom: 11px;
+  }
+
+  .page-footer__copyrights {
+    font-size: 14px;
+
+    &::before {
+      left: -23px;
+    }
+
+    &::after {
+      right: -23px;
+    }
+  }
+}

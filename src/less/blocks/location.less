@@ -56,6 +56,7 @@
     height: 28px;
 
     background: url("../img/icons/!green.png") no-repeat center;
+    background-size: contain;
 
     content: "";
   }
@@ -104,9 +105,58 @@
     bottom: 0;
     margin: 0;
     width: 40%;
+
+    &::after {
+      position: absolute;
+      top: -5px;
+      right: -5px;
+      width: 10px;
+      height: 10px;
+
+      border-top: 1px solid rgba(255, 255, 255, 0.5);
+      border-right: 1px solid rgba(255, 255, 255, 0.5);
+
+      content: "";
+    }
   }
 
   .location__button {
     width: auto;
+  }
+}
+
+@media (min-width: @desktop) {
+  .location {
+    padding-top: 112px;
+    padding-bottom: 127px;
+  }
+
+  .location__heading {
+    margin-bottom: 63px;
+  }
+
+  .location__text {
+    margin-top: -20px;
+    padding-left: 10px;
+
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .location__notify {
+    width: 39%;
+    padding-top: 53px;
+    padding-bottom: 49px;
+    padding-left: 102px;
+    padding-right: 35px;
+    font-size: 16px;
+    line-height: 26px;
+
+    &::before {
+      top: 50%;
+      left: 52px;
+      width: 8px;
+      height: 42px;
+    }
   }
 }

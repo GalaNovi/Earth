@@ -127,6 +127,7 @@
   height: 35%;
 
   background-color: #36394d;
+  transition: 0.3s;
 }
 
 .advantages__item-text {
@@ -189,6 +190,12 @@
 }
 
 @media (min-width: @tablet) {
+  .advantages {
+    padding-top: 66px;
+    padding-bottom: 74px;
+    background: #f7f8fc url("../img/bg/rhombus-bg-contacts-desktop.png") no-repeat center bottom;
+  }
+
   .advantages__list {
     display: flex;
     justify-content: space-between;
@@ -231,7 +238,54 @@
   }
 
   .advantages__button {
-    padding: 12px 27px 10px;
+    padding: 13px 16px 11px;
     width: auto;
+  }
+}
+
+@media (min-width: @desktop) {
+  .advantages {
+    padding-top: 112px;
+    padding-bottom: 124px;
+    background: linear-gradient(to left, #ffffff 52px, transparent 52px), #f7f8fc url("../img/bg/rhombus-bg-contacts-desktop.png") no-repeat center bottom;
+  }
+
+  .advantages__heading {
+    margin-bottom: 12px;
+  }
+
+  .advantages__description {
+    margin-bottom: 47px;
+    padding: 0;
+
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .advantages__list {
+    margin-bottom: 24px;
+  }
+
+  .advantages__item {
+    padding-left: 151px;
+    min-height: 140px;
+
+    background-position: 40px center;
+    cursor: pointer;
+
+    &:hover {
+      .advantages__item-hover-element {
+        background-color: @brand-color;
+      }
+    }
+  }
+
+  .advantages__item-text {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .advantages__button {
+    padding: 13px 16px 11px;
   }
 }

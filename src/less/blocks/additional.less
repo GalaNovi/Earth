@@ -23,6 +23,7 @@
 
   font-size: 12px;
   line-height: 18px;
+  color: #737480;
 
   &:nth-child(4n+1) {
     color: #ffffff;
@@ -139,7 +140,7 @@
   }
 
   .additional__item {
-    padding: 45px 40px 45px 50px;
+    padding: 4% 3% 4% 4.5%;
     width: 22.97%;
 
     &:not(:last-child) {
@@ -147,14 +148,14 @@
     }
 
     &:nth-child(odd) {
-      padding: 4% 3.6% 4% 4.5%;
+      padding: 4% 3% 4% 4.5%;
       width: 22.97%;
     }
 
     &:nth-child(even) {
       display: flex;
       align-items: center;
-      padding: 45px 40px 45px 50px;
+      padding: 4% 3% 4% 4.5%;
 
       .additional__item-text {
         &::before {
@@ -182,7 +183,7 @@
     }
 
     &:nth-child(4) {
-      padding: 45px 40px 45px 50px;
+      padding: 4% 3% 4% 4.5%;
 
       &::after {
         top: 0;
@@ -192,6 +193,64 @@
       &::before {
         top: 8px;
         left: 13px;
+      }
+    }
+  }
+}
+
+@media (min-width: @desktop) {
+  .additional {
+    padding-top: 66px;
+    padding-bottom: 140px;
+  }
+
+  .additional__heading {
+    margin-bottom: 70px;
+  }
+
+  .additional__item {
+    font-size: 16px;
+    line-height: 22px;
+
+    &::after {
+      font-size: 34px;
+    }
+
+    &:nth-child(odd) {
+      &::after {
+        right: -38px;
+        bottom: -26px;
+      }
+    }
+
+    &:nth-child(even) {
+      &::after {
+        top: -3px;
+        left: 12px;
+      }
+
+      &::before {
+        top: 6px;
+        left: 32px;
+      }
+    }
+
+    &:nth-child(3) {
+      &::after {
+        right: -44px;
+        bottom: -24px;
+      }
+    }
+
+    &:nth-child(4) {
+      &::after {
+        top: -4px;
+        left: 11px;
+      }
+
+      &::before {
+        top: 6px;
+        left: 32px;
       }
     }
   }
