@@ -146,6 +146,12 @@
       background-image: url("../img/svg/email-form.svg");
     }
   }
+
+  &--message {
+    &::after {
+      display: none;
+    }
+  }
 }
 
 .popup__form-field {
@@ -155,7 +161,7 @@
   height: 54px;
 
   font-size: 13px;
-  line-height: 13px;
+  line-height: 18px;
   color: #737480;
 
   border: 1px solid #dadce2;
@@ -266,7 +272,13 @@
     height: 60px;
 
     font-size: 18px;
-    line-height: 20px;
+    line-height: 24px;
+
+    &--message {
+      padding: 17px 19px;
+      height: 120px;
+      resize: none;
+    }
   }
 }
 
