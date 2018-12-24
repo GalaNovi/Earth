@@ -12,7 +12,18 @@
     var overlayElement = document.querySelector('#overlay'); // Затемняющий слой
     var internalLinksElements = document.querySelectorAll('.menu__link'); // Внутренние ссылки
 
-    var initMenu = function (burger, menu, overlay, internalLinks) {
+    var initMenu = function (burger, menu, overlay) {
+      var bodyElement = document.querySelector('body');
+
+      // Переключает блокировку боди
+      var switchBlockBody = function () {
+        if (bodyElement.style.overflow == false) {
+          bodyElement.style.overflow = 'hidden';
+        } else {
+          bodyElement.style.overflow = '';
+        }
+      };
+
       // Переключает кнопку меню
       var switchBurger = function () {
         burger.classList.toggle(BURGER_CLOSED_CLASS);
@@ -37,6 +48,7 @@
       // Переключает затемняющий слой
       var switchOverlay = function () {
         overlay.classList.toggle(OVERLAY_ACTIVE_CLASS);
+        switchBlockBody();
       };
 
       // Действия прри клике на кнопку меню
@@ -51,18 +63,8 @@
         }
       };
 
-      // При нажатии на ссылку закрывает меню
-      var onInternalLinkClick = function () {
-        closeOpenMenu();
-      };
-
       // Обработчик клика на кнопке меню
       burger.addEventListener('click', closeOpenMenu);
-
-      // Слушатели для внутренних ссылок. При переходе меню закрывается
-      internalLinks.forEach(function (link) {
-        link.addEventListener('click', onInternalLinkClick);
-      });
 
       // По тапу на затемняющий слой закрывается меню
       overlay.addEventListener('click', closeOpenMenu);

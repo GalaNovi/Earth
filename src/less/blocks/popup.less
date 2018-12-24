@@ -32,7 +32,7 @@
 
 .popup__header-element {
   position: absolute;
-  top: -40px;
+  top: -39px;
   right: 0;
   width: calc(100% - 40px);
   height: 40px;
@@ -160,8 +160,9 @@
   width: 100%;
   height: 54px;
 
+  font-family: "Arial", sans-serif;
   font-size: 13px;
-  line-height: 18px;
+  line-height: 1.15;
   color: #737480;
 
   border: 1px solid #dadce2;
@@ -284,6 +285,7 @@
 
 @media (min-width: @desktop) {
   .popup {
-    margin-top: 100px;
+    top: 50%;
+    transform: translate(-50%, calc(-50% + 20px));
   }
 }
