@@ -12,8 +12,9 @@
     var overlayElement = document.querySelector('#overlay'); // Затемняющий слой
     var internalLinksElements = document.querySelectorAll('.menu__link'); // Внутренние ссылки
 
-    var initMenu = function (burger, menu, overlay) {
+    var initMenu = function (burger, menu, overlay, internalLinks) {
       var bodyElement = document.querySelector('body');
+      window.menuOpened = false; // Флаг в глобальной области, что бы при открытии попапа было известно открыто ли меню
 
       // Переключает блокировку боди
       var switchBlockBody = function () {
@@ -36,9 +37,11 @@
           menu.classList.toggle(MENU_OPENED_CLASS);
           menu.classList.toggle(MENU_CLOSED_CLASS);
           menu.style.display = 'block';
+          window.menuOpened = true;
         } else {
           menu.classList.toggle(MENU_OPENED_CLASS);
           menu.classList.toggle(MENU_CLOSED_CLASS);
+          window.menuOpened = false;
           setTimeout(function () {
             menu.style.display = '';
           }, 500);
@@ -63,11 +66,22 @@
         }
       };
 
+      // Если клик по затемняющему слою, то меню закрывается
+      var onOverlayClick = function (evt) {
+        if (evt.target === overlay) {
+          closeOpenMenu();
+        }
+      };
+
       // Обработчик клика на кнопке меню
       burger.addEventListener('click', closeOpenMenu);
 
       // По тапу на затемняющий слой закрывается меню
-      overlay.addEventListener('click', closeOpenMenu);
+      overlay.addEventListener('click', onOverlayClick);
+
+      internalLinks.forEach(function (link) {
+        link.addEventListener('click', closeOpenMenu);
+      });
     };
 
     // Подключаем все элементы

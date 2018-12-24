@@ -27,6 +27,18 @@
       var closeButton = popup.querySelector('.' + CLOSE_BUTTON_CLASS);
       var bodyElement = document.querySelector('body');
 
+      // Блокирует прокрутку страницы
+      var blockBody = function () {
+        bodyElement.style.overflow = 'hidden';
+      };
+
+      // Разблокирует прокрутку страницы
+      var unblockBody = function () {
+        if (!window.menuOpened) {
+          bodyElement.style.overflow = '';
+        }
+      };
+
       // При клике на крестик, закрывает попап
       var onCloseButtonClick = function (evt) {
         evt.preventDefault();
@@ -64,7 +76,7 @@
         window.addEventListener('keydown', onWindowKeydown);
         overlay.addEventListener('click', onOverlayClick);
         switchOverlay();
-        bodyElement.style.overflow = 'hidden';
+        blockBody();
       };
 
       // Закрывает попап, удаляет обработчики
@@ -75,7 +87,7 @@
         window.removeEventListener('keydown', onWindowKeydown);
         overlay.removeEventListener('click', onOverlayClick);
         switchOverlay();
-        bodyElement.style.overflow = '';
+        unblockBody();
       };
 
       // Переключает затемняющий слой
