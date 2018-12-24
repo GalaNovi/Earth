@@ -340,3 +340,12 @@ template {
 [hidden] {
   display: none;
 }
+
+/**
+* Удаляет скругления и тень инпутов в ios
+*/
+
+input:not([type="radio"]):not([type="checkbox"]) {
+  -webkit-appearance: none;
+  border-radius: 0;
+}

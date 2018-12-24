@@ -210,9 +210,9 @@
   position: absolute;
   top: -73px;
   right: -1px;
-  transform: rotate(45deg);
   width: 18px;
   height: 18px;
+  padding: 0;
 
   border: none;
   outline: none;
@@ -222,25 +222,20 @@
   &::before,
   &::after {
     position: absolute;
-
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 2px;
     background-color: #d7d8dc;
     content: "";
   }
 
   &::before {
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    width: 100%;
-    height: 2px;
+    transform: rotate(45deg);
   }
 
   &::after {
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 2px;
-    height: 100%;
+    transform: rotate(-45deg);
   }
 }
 
