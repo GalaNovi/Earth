@@ -73,6 +73,11 @@
         }
       };
 
+      // Обработчик клика по внутренней ссылке
+      var oninternalLinkClick = function () {
+        closeOpenMenu();
+      };
+
       // Обработчик клика на кнопке меню
       burger.addEventListener('click', closeOpenMenu);
 
@@ -80,7 +85,7 @@
       overlay.addEventListener('click', onOverlayClick);
 
       internalLinks.forEach(function (link) {
-        link.addEventListener('click', closeOpenMenu);
+        link.addEventListener('click', oninternalLinkClick);
       });
     };
 
